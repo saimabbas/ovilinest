@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+:root {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  transition: 0.5s;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  background-color: #000;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  border-radius: 1000px;
+}
+.box {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+.app a {
+  text-decoration: none;
+  transition: 0.35s;
+}
+.fatface {
+  font-family: "Abril Fatface", "Lexend", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  width: 100%;
+  background-color: #000;
+  z-index: 1001;
+  position: relative;
+  transition: 0.5s;
+}
+.header-content {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-left > * {
+  margin: 0 2rem 0 0;
+}
+.header-left img {
+  width: max-content;
+  height: 5rem;
+  object-fit: contain;
+}
+.header-left a {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+}
+.header-left a:hover {
+  color: #fff;
+  opacity: 0.75;
+}
+.header-left div {
+  width: 1px;
+  height: 2rem;
+  background-color: #fff;
+}
+header .dropdown button {
+  background-color: #1d1b1f;
+  border: 0;
+  font-size: 1.65rem;
+  padding: 0.35rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: unset !important;
+}
+header .dropdown button:hover,
+header .dropdown button:active,
+header .dropdown button:focus-visible,
+header .dropdown button:focus {
+  background-color: #1d1b1f !important;
+  box-shadow: unset !important;
+}
+header .dropdown button::after {
+  display: none;
+}
+header .dropdown button svg {
+  font-size: 2rem;
+  margin: 0 0 0 1rem;
+}
+header .dropdown .dropdown-menu {
+  background-color: #1d1b1f !important;
+  border-radius: 0;
+  padding: 0.25rem 0 !important;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35) !important;
+}
+header .dropdown .dropdown-menu a {
+  font-size: 1.35rem;
+  padding: 0.15rem 1rem;
+  color: #fff;
+}
+header .dropdown .dropdown-menu a:hover {
+  background-color: #1d1b1f !important;
+  opacity: 0.75;
+}
+footer {
+  width: 100%;
+  background-color: #0b0b0b;
+  padding: 2.5rem 0;
+  position: relative;
+  z-index: 1000;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-top span {
+  font-size: 1.25rem;
+  color: #fff;
+  display: flex;
+  width: max-content;
+}
+.footer-top div {
+  width: 1px;
+  height: 2rem;
+  background-color: #fff;
+  margin: 0 1.5rem;
+}
+.footer-content > p {
+  font-size: 1.15rem;
+  color: #777777;
+  margin: 1rem 0 0 0;
+}
