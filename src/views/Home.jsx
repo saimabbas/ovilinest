@@ -166,13 +166,26 @@ const Home = () => {
         opacity: "1",
       });
     });
+    $(window).on("load", function () {
+      gsap.fromTo(
+        ".home-page",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.15,
+          delay: 0.5,
+        }
+      );
+    });
   }, []);
 
   return (
     <div className="app">
       <main className="home-page">
         <div className="letter-box o-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={Ovideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -201,7 +214,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box v-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={Vvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -231,7 +244,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i1-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={I1video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -260,7 +273,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box l-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={Lvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -290,7 +303,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i2-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={I2video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -319,7 +332,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box nest-box">
-          <video muted loop autoPlay>
+          <video loading="lazy" muted loop autoPlay>
             <source src={NESTvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
