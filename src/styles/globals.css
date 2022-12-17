@@ -14,6 +14,7 @@
 html,
 body {
   width: 100%;
+  background-color: #000;
 }
 body {
   transition: 0.5s;
@@ -50,6 +51,7 @@ header {
   z-index: 1001;
   position: relative;
   transition: 0.5s;
+  border: 1px solid #484848;
 }
 .header-content {
   width: 100%;
@@ -162,4 +164,72 @@ footer {
   font-size: 1.15rem;
   color: #777777;
   margin: 1rem 0 0 0;
+  text-align: center;
+}
+.header-mob-menu-icon {
+  display: none;
+}
+.header-mob-menu-icon svg {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.section-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 7.5rem 0 2.5rem 0;
+  justify-content: center;
+}
+.section-heading > p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.section-heading-box {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-heading-box > div {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-heading-box h3 {
+  font-size: 5rem;
+  color: #fff;
+  margin: 0;
+}
+.section-heading-box span {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+  height: 3px;
+  background: linear-gradient(to right, #bcfb69, #26bbac);
+}
+@media screen and (max-width: 875px) {
+  .header-left *:not(img) {
+    display: none;
+  }
+  .header-right .dropdown {
+    display: none;
+  }
+  .header-mob-menu-icon {
+    display: block;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-top div {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-left img {
+    height: 4rem;
+  }
 }

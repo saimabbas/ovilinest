@@ -1,0 +1,93 @@
+.faq-section {
+  width: 100%;
+  background-color: #000;
+  min-height: calc(100vh - 7rem);
+  padding: 0 0 15rem 0;
+  position: relative;
+}
+.faq-section > img {
+  height: 85%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 100;
+}
+.faq-container {
+  width: 100%;
+  position: relative;
+  z-index: 200;
+}
+.faq-container .accordion-item {
+  border-radius: 0;
+  background-color: unset;
+  border: 0;
+}
+.faq-container .accordion-button {
+  padding: 0;
+  background-color: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-container .accordion-button::after {
+  display: none;
+}
+.faq-container .accordion,
+.faq-container .accordion * {
+  transition: 0.35s !important;
+}
+.faq-container .accordion-body {
+  padding: 1.5rem 0 0 0;
+}
+.faq-container .accordion-button:not(.collapsed) {
+  color: unset;
+  background-color: unset;
+  box-shadow: unset;
+}
+.faq-container .accordion-button:active,
+.faq-container .accordion-button:focus {
+  box-shadow: unset;
+}
+.acc-item-border-box {
+  width: 100%;
+  background: linear-gradient(to right, #bcfb69, #26bbac);
+  border-radius: 1.25rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0.15rem;
+}
+.acc-item-border-box .accordion-item {
+  border-radius: 1.35rem;
+  width: 100%;
+  background-color: #000;
+  padding: 2rem 2.5rem;
+}
+.faq-container .accordion-button h5 {
+  font-size: 1.65rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  max-width: 90%;
+}
+.faq-container .accordion-button svg {
+  color: #bcfb69;
+  font-size: 2rem;
+}
+.faq-container .accordion-body p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+.faq-container .accordion-button:not(.collapsed) h5 {
+  background: linear-gradient(to right, #bcfb69, #26bbac);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.faq-container .accordion-button:not(.collapsed) svg {
+  transform: rotate(-180deg);
+}
+.faq-content {
+  width: 100%;
+}
