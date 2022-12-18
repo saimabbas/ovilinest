@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 :root {
   font-size: 10px;
+  --white: #fff;
+  --black: #000;
 }
 * {
   margin: 0;
@@ -14,7 +16,7 @@
 html,
 body {
   width: 100%;
-  background-color: #000;
+  background-color: var(--black);
 }
 body {
   transition: 0.5s;
@@ -24,7 +26,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
   background-color: #f5f5f5;
-  background-color: #000;
+  background-color: var(--black);
 }
 body::-webkit-scrollbar-thumb {
   background-color: #282828;
@@ -47,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 header {
   width: 100%;
-  background-color: #000;
+  background-color: var(--black);
   z-index: 1001;
   position: relative;
   transition: 0.5s;
@@ -76,17 +78,17 @@ header {
 }
 .header-left a {
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
 }
 .header-left a:hover {
-  color: #fff;
+  color: var(--white);
   opacity: 0.75;
 }
 .header-left div {
   width: 1px;
   height: 2rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 header .dropdown button {
   background-color: #1d1b1f;
@@ -121,7 +123,7 @@ header .dropdown .dropdown-menu {
 header .dropdown .dropdown-menu a {
   font-size: 1.35rem;
   padding: 0.15rem 1rem;
-  color: #fff;
+  color: var(--white);
 }
 header .dropdown .dropdown-menu a:hover {
   background-color: #1d1b1f !important;
@@ -150,14 +152,14 @@ footer {
 }
 .footer-top span {
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--white);
   display: flex;
   width: max-content;
 }
 .footer-top div {
   width: 1px;
   height: 2rem;
-  background-color: #fff;
+  background-color: var(--white);
   margin: 0 1.5rem;
 }
 .footer-content > p {
@@ -171,7 +173,7 @@ footer {
 }
 .header-mob-menu-icon svg {
   font-size: 2.5rem;
-  color: #fff;
+  color: var(--white);
 }
 .section-heading {
   width: 100%;
@@ -183,8 +185,9 @@ footer {
 }
 .section-heading > p {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
   text-align: center;
+  max-width: 500px;
 }
 .section-heading-box {
   width: max-content;
@@ -201,8 +204,10 @@ footer {
 }
 .section-heading-box h3 {
   font-size: 5rem;
-  color: #fff;
+  color: var(--white);
+  font-weight: 700;
   margin: 0;
+  text-transform: uppercase;
 }
 .section-heading-box span {
   display: flex;

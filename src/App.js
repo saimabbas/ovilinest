@@ -1,5 +1,9 @@
 import Home from "./views/Home";
 import Faq from "./views/Faq";
+import Utility from "./views/Utility";
+import JourneyMap from "./views/JourneyMap";
+import Nest from "./views/Nest";
+import World from "./views/World";
 
 import {
   BrowserRouter as Switch,
@@ -15,6 +19,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/faq" element={<Faq />} />
+          <Route exact path="/utility" element={<Utility />} />
+          <Route exact path="/journeymap" element={<JourneyMap />} />
+          <Route exact path="/nest" element={<Nest />} />
+          <Route exact path="/world" element={<World />} />
         </Routes>
       </Switch>
     </>

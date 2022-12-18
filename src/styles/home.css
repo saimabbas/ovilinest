@@ -10,7 +10,7 @@
 .hero-section {
   width: 100%;
   height: 100%;
-  /* background-color: #000000; */
+  /* background-color: var(--black)000; */
   position: relative;
   z-index: 1000;
   transition: 0.5s;
@@ -19,7 +19,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #404040, #000);
+  background: linear-gradient(135deg, #404040, var(--black));
   position: absolute;
   top: 0;
   z-index: 500;
@@ -42,7 +42,7 @@
 }
 .hero-content-box h2 {
   font-size: 4.5rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 600;
   margin: 2.5rem 0 0.5rem 0;
 }
@@ -59,7 +59,7 @@
 }
 .hero-head h1 span {
   font-size: 22.5rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 300;
   margin: 0 1rem 0 0;
   letter-spacing: 5px;
@@ -304,22 +304,22 @@ span.o:hover .o-box.letter-box {
     display: none;
   }
   .o-box.letter-box span.oo {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .v-box.letter-box span.vv {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .i1-box.letter-box span.ii1 {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .l-box.letter-box span.ll {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .i2-box.letter-box span.ii2 {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .nest-box.letter-box span.nestnest {
-    color: #fff !important;
+    color: var(--white) !important;
   }
   .letter-body {
     padding: 0 3rem;

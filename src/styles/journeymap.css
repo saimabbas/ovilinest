@@ -1,0 +1,84 @@
+.map-section {
+  width: 100%;
+  background-color: var(--black);
+  min-height: calc(100vh - 7rem);
+  padding: 0 0 15rem 0;
+  position: relative;
+}
+.map-grid {
+  width: 100%;
+  padding: 2.5rem 0 0 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.map-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  margin: 0 0 5rem 0;
+}
+.mapcard-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+.mapcard-left h5 {
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 700;
+}
+.mapcard-left h5 i {
+  font-size: 1.85rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.mapcard-left h5 span {
+  color: #bcfb69;
+  font-size: 4.5rem;
+}
+.mapcard-left p {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+  color: var(--white);
+  margin: 0;
+}
+.mapcard-right-bg {
+  width: 100%;
+  background: linear-gradient(to right, #bcfb69, #26bbac);
+  border-radius: 2rem 0 2rem 0;
+  padding: 0.2rem;
+}
+.mapcard-right {
+  border-radius: 2rem 0 2rem 0;
+  width: 100%;
+  background-color: var(--black);
+  padding: 2rem;
+}
+.mcr-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 0 1.5rem 0;
+}
+.mcr-box span {
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-radius: 1000px;
+  background-color: #26bbac;
+  color: var(--white);
+  margin: 0 1.5rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 1rem;
+}
+.mcr-box p {
+  font-size: 1.35rem;
+  color: var(--white);
+  margin: 0;
+}

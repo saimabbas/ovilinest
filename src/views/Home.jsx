@@ -32,7 +32,7 @@ import { Dropdown } from "react-bootstrap";
 import { MdKeyboardArrowDown, MdMenu, MdCancel } from "react-icons/md";
 const Home = () => {
   useEffect(() => {
-    /* gsap.fromTo(
+    gsap.fromTo(
       ".o, .v, .i1, .l, .i2",
       {
         backgroundPosition: "0",
@@ -61,7 +61,7 @@ const Home = () => {
         yoyo: true,
         duration: 15,
       }
-    ); */
+    );
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
@@ -185,7 +185,7 @@ const Home = () => {
     <div className="app">
       <main className="home-page">
         <div className="letter-box o-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={Ovideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -202,7 +202,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={Ovideo} type="video/mp4" />
                 </video>
               </div>
@@ -217,7 +217,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box v-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={Vvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -235,7 +235,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={Vvideo} type="video/mp4" />
                 </video>
               </div>
@@ -250,7 +250,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i1-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={I1video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -267,7 +267,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={I1video} type="video/mp4" />
                 </video>
               </div>
@@ -282,7 +282,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box l-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={Lvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -300,7 +300,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={Lvideo} type="video/mp4" />
                 </video>
               </div>
@@ -315,7 +315,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i2-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={I2video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -332,7 +332,7 @@ const Home = () => {
                   </span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={I2video} type="video/mp4" />
                 </video>
               </div>
@@ -347,7 +347,7 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box nest-box">
-          <video preload="auto" muted loop autoPlay>
+          <video muted loop autoPlay>
             <source src={NESTvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -364,7 +364,7 @@ const Home = () => {
                     <i className="i-left">OViLi</i>nest
                   </span>
                 </h1>
-                <video preload="auto" muted loop autoPlay>
+                <video muted loop autoPlay>
                   <source src={NESTvideo} type="video/mp4" />
                 </video>
               </div>

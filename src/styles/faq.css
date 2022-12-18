@@ -1,6 +1,6 @@
 .faq-section {
   width: 100%;
-  background-color: #000;
+  background-color: var(--black);
   min-height: calc(100vh - 7rem);
   padding: 0 0 15rem 0;
   position: relative;
@@ -60,12 +60,12 @@
 .acc-item-border-box .accordion-item {
   border-radius: 1.35rem;
   width: 100%;
-  background-color: #000;
+  background-color: var(--black);
   padding: 2rem 2.5rem;
 }
 .faq-container .accordion-button h5 {
   font-size: 1.65rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   margin: 0;
   max-width: 90%;
@@ -76,7 +76,7 @@
 }
 .faq-container .accordion-body p {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
   margin: 0;
 }
 .faq-container .accordion-button:not(.collapsed) h5 {
