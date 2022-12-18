@@ -25,47 +25,185 @@ import {
   Expo,
   Circ,
 } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 import { Dropdown, Accordion } from "react-bootstrap";
 import {
   MdKeyboardArrowDown,
   MdMenu,
-  MdCancel,
+  MdClose,
   MdExpandMore,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Nest = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
+
   useEffect(() => {
-    $(window).on("load", function () {
-      gsap.fromTo(
-        ".home-page",
+    // $(window).on("load", function () {});
+    let chap1Anim = gsap.timeline({});
+    chap1Anim
+      .fromTo(
+        ".wc-1 .world-text-box h2",
         {
           opacity: 0,
+          y: "5rem",
         },
         {
           opacity: 1,
-          duration: 0.15,
-          delay: 0.5,
+          y: 0,
+          duration: 1,
         }
+      )
+      .fromTo(
+        ".wc-1 .world-text-box p",
+        {
+          opacity: 0,
+          y: "4rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.25,
+        },
+        "<0.5"
       );
+    let chap2Anim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".wc-2",
+        start: "top 65%",
+      },
     });
+    chap2Anim
+      .fromTo(
+        ".wc-2 .world-text-box h2",
+        {
+          opacity: 0,
+          y: "5rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+        }
+      )
+      .fromTo(
+        ".wc-2 .world-text-box p",
+        {
+          opacity: 0,
+          y: "4rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+        },
+        "<0.5"
+      );
+    let chap3Anim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".wc-3",
+        start: "top 65%",
+      },
+    });
+    chap3Anim
+      .fromTo(
+        ".wc-3 .world-text-box h2",
+        {
+          opacity: 0,
+          y: "5rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+        }
+      )
+      .fromTo(
+        ".wc-3 .world-text-box p",
+        {
+          opacity: 0,
+          y: "4rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+        },
+        "<0.5"
+      );
   }, []);
 
   return (
     <div className="app">
       <main className="world-page">
         <header>
+          {isMobHeaderShowing ? (
+            <div className="header-mob">
+              <div className="header-mob-head">
+                <div className="home-box">
+                  <div className="hmh-content">
+                    <Link to="/">
+                      <img src={Logo1} alt="Logo1" />
+                    </Link>
+                    <div
+                      onClick={() => {
+                        setIsMobHeaderShowing(false);
+                      }}
+                      className="header-mob-menu-icon"
+                    >
+                      <MdClose />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="header-mob-body">
+                <div className="home-box">
+                  <div className="hmb-content">
+                    <Link to="/world">
+                      <span>WORLD</span>
+                    </Link>
+                    <Link to="/journeymap">JOURNEY MAP</Link>
+                    <Link to="/utility">UTLITY</Link>
+                    <Link to="/nest">NEST</Link>
+                    <Link to="/guide">GUIDE</Link>
+                    <Link to="/faq">FAQ</Link>
+                    <Dropdown>
+                      <Dropdown.Toggle>
+                        Link <MdKeyboardArrowDown />{" "}
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YongPyong
+                        </Dropdown.Item>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YouTube
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
+
           <div className="home-box">
             <div className="header-content">
               <div className="header-left">
-                <img src={Logo1} alt="Logo1" />
-                <a href="#">WORLD</a>
-                <a href="#">JOURNEY MAP</a>
-                <a href="#">UTLITY</a>
-                <a href="#">NEST</a>
+                <Link to="/">
+                  <img src={Logo1} alt="Logo1" />
+                </Link>
+                <Link to="/world">
+                  <span>WORLD</span>
+                </Link>
+                <Link to="/journeymap">JOURNEY MAP</Link>
+                <Link to="/utility">UTLITY</Link>
+                <Link to="/nest">NEST</Link>
                 <div></div>
-                <a href="#">GUIDE</a>
-                <a href="#">FAQ</a>
+                <Link to="/guide">GUIDE</Link>
+                <Link to="/faq">FAQ</Link>
               </div>
               <div className="header-right">
                 <Dropdown>
@@ -81,7 +219,12 @@ const Nest = () => {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <div className="header-mob-menu-icon">
+                <div
+                  onClick={() => {
+                    setIsMobHeaderShowing(true);
+                  }}
+                  className="header-mob-menu-icon"
+                >
                   <MdMenu />
                 </div>
               </div>

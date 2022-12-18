@@ -4,6 +4,7 @@ import Utility from "./views/Utility";
 import JourneyMap from "./views/JourneyMap";
 import Nest from "./views/Nest";
 import World from "./views/World";
+import Guide from "./views/Guide";
 
 import {
   BrowserRouter as Switch,
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/journeymap" element={<JourneyMap />} />
           <Route exact path="/nest" element={<Nest />} />
           <Route exact path="/world" element={<World />} />
+          <Route exact path="/guide" element={<Guide />} />
         </Routes>
       </Switch>
     </>

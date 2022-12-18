@@ -36,11 +36,14 @@ import { Dropdown, Accordion } from "react-bootstrap";
 import {
   MdKeyboardArrowDown,
   MdMenu,
-  MdCancel,
+  MdClose,
   MdExpandMore,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Utility = () => {
+  const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
+
   useEffect(() => {
     $(window).on("load", function () {
       gsap.fromTo(
@@ -61,17 +64,70 @@ const Utility = () => {
     <div className="app">
       <main className="utility-page">
         <header>
+          {isMobHeaderShowing ? (
+            <div className="header-mob">
+              <div className="header-mob-head">
+                <div className="home-box">
+                  <div className="hmh-content">
+                    <Link to="/">
+                      <img src={Logo1} alt="Logo1" />
+                    </Link>
+                    <div
+                      onClick={() => {
+                        setIsMobHeaderShowing(false);
+                      }}
+                      className="header-mob-menu-icon"
+                    >
+                      <MdClose />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="header-mob-body">
+                <div className="home-box">
+                  <div className="hmb-content">
+                    <Link to="/world">WORLD</Link>
+                    <Link to="/journeymap">JOURNEY MAP</Link>
+                    <Link to="/utility">
+                      <span>UTLITY</span>
+                    </Link>
+                    <Link to="/nest">NEST</Link>
+                    <Link to="/guide">GUIDE</Link>
+                    <Link to="/faq">FAQ</Link>
+                    <Dropdown>
+                      <Dropdown.Toggle>
+                        Link <MdKeyboardArrowDown />{" "}
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YongPyong
+                        </Dropdown.Item>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YouTube
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
+
           <div className="home-box">
             <div className="header-content">
               <div className="header-left">
-                <img src={Logo1} alt="Logo1" />
-                <a href="#">WORLD</a>
-                <a href="#">JOURNEY MAP</a>
-                <a href="#">UTLITY</a>
-                <a href="#">NEST</a>
+                <Link to="/">
+                  <img src={Logo1} alt="Logo1" />
+                </Link>
+                <Link to="/world">WORLD</Link>
+                <Link to="/journeymap">JOURNEY MAP</Link>
+                <Link to="/utility">
+                  <span>UTLITY</span>
+                </Link>
+                <Link to="/nest">NEST</Link>
                 <div></div>
-                <a href="#">GUIDE</a>
-                <a href="#">FAQ</a>
+                <Link to="/guide">GUIDE</Link>
+                <Link to="/faq">FAQ</Link>
               </div>
               <div className="header-right">
                 <Dropdown>
@@ -87,7 +143,12 @@ const Utility = () => {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <div className="header-mob-menu-icon">
+                <div
+                  onClick={() => {
+                    setIsMobHeaderShowing(true);
+                  }}
+                  className="header-mob-menu-icon"
+                >
                   <MdMenu />
                 </div>
               </div>
@@ -109,7 +170,7 @@ const Utility = () => {
                 </p>
               </div>
               <div className="utility-grid">
-                <div className="common-benefits-card-bg">
+                <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
                     <img src={CBImg1} alt="CBImg1" />
                     <div className="cbc-content">
@@ -122,7 +183,7 @@ const Utility = () => {
                     </div>
                   </div>
                 </div>
-                <div className="common-benefits-card-bg">
+                <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
                     <img src={CBImg1} alt="CBImg1" />
                     <div className="cbc-content">
@@ -136,7 +197,7 @@ const Utility = () => {
                     </div>
                   </div>
                 </div>
-                <div className="suites-card-bg">
+                <div className="suites-card-bg utility-card-anim">
                   <div className="suites-card">
                     <div className="sc-head">
                       <h3>Royal Suite</h3>
@@ -182,7 +243,7 @@ const Utility = () => {
                     </div>
                   </div>
                 </div>
-                <div className="suites-card-bg">
+                <div className="suites-card-bg utility-card-anim">
                   <div className="suites-card">
                     <div className="sc-head">
                       <h3>Presidential Suite</h3>
@@ -238,7 +299,7 @@ const Utility = () => {
                   </div>
                 </div>
                 <div className="plans-grid">
-                  <div className="suites-card-bg">
+                  <div className="suites-card-bg utility-card-anim">
                     <div className="suites-card">
                       <div className="sc-head">
                         <div className="duo-text-box">
@@ -287,7 +348,7 @@ const Utility = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="suites-card-bg">
+                  <div className="suites-card-bg utility-card-anim">
                     <div className="suites-card">
                       <div className="sc-head">
                         <div className="duo-text-box">
@@ -336,7 +397,7 @@ const Utility = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="suites-card-bg">
+                  <div className="suites-card-bg utility-card-anim">
                     <div className="suites-card">
                       <div className="sc-head">
                         <div className="duo-text-box">
@@ -377,7 +438,7 @@ const Utility = () => {
                     </div>
                   </div>
                 </div>
-                <div className="notes-card">
+                <div className="notes-card utility-card-anim">
                   <h6>[유틸리티 유의사항]</h6>
                   <p>
                     1. 유틸리티는 등급별 CLAIM 횟수가 상이하며, 매월 말일 자정

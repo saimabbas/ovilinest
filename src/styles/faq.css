@@ -91,3 +91,10 @@
 .faq-content {
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .acc-item-border-box .accordion-item {
+    width: 100%;
+    background-color: var(--black);
+    padding: 1.5rem;
+  }
+}

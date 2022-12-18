@@ -189,3 +189,12 @@
   font-weight: 400;
   color: #d4d4d4;
 }
+@media screen and (max-width: 875px) {
+  .utility-grid,
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  .utility-section {
+    padding: 0 0 5rem 0;
+  }
+}

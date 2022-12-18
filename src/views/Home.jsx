@@ -29,8 +29,10 @@ import {
 } from "gsap/dist/gsap";
 import $ from "jquery";
 import { Dropdown } from "react-bootstrap";
-import { MdKeyboardArrowDown, MdMenu, MdCancel } from "react-icons/md";
+import { MdKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Home = () => {
+  const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   useEffect(() => {
     gsap.fromTo(
       ".o, .v, .i1, .l, .i2",
@@ -379,17 +381,66 @@ const Home = () => {
           </div>
         </div>
         <header>
+          {isMobHeaderShowing ? (
+            <div className="header-mob">
+              <div className="header-mob-head">
+                <div className="home-box">
+                  <div className="hmh-content">
+                    <Link to="/">
+                      <img src={Logo1} alt="Logo1" />
+                    </Link>
+                    <div
+                      onClick={() => {
+                        setIsMobHeaderShowing(false);
+                      }}
+                      className="header-mob-menu-icon"
+                    >
+                      <MdClose />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="header-mob-body">
+                <div className="home-box">
+                  <div className="hmb-content">
+                    <Link to="/world">WORLD</Link>
+                    <Link to="/journeymap">JOURNEY MAP</Link>
+                    <Link to="/utility">UTLITY</Link>
+                    <Link to="/nest">NEST</Link>
+                    <Link to="/guide">GUIDE</Link>
+                    <Link to="/faq">FAQ</Link>
+                    <Dropdown>
+                      <Dropdown.Toggle>
+                        Link <MdKeyboardArrowDown />{" "}
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YongPyong
+                        </Dropdown.Item>
+                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                          YouTube
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
+
           <div className="home-box">
             <div className="header-content">
               <div className="header-left">
-                <img src={Logo1} alt="Logo1" />
-                <a href="#">WORLD</a>
-                <a href="#">JOURNEY MAP</a>
-                <a href="#">UTLITY</a>
-                <a href="#">NEST</a>
+                <Link to="/">
+                  <img src={Logo1} alt="Logo1" />
+                </Link>
+                <Link to="/world">WORLD</Link>
+                <Link to="/journeymap">JOURNEY MAP</Link>
+                <Link to="/utility">UTLITY</Link>
+                <Link to="/nest">NEST</Link>
                 <div></div>
-                <a href="#">GUIDE</a>
-                <a href="#">FAQ</a>
+                <Link to="/guide">GUIDE</Link>
+                <Link to="/faq">FAQ</Link>
               </div>
               <div className="header-right">
                 <Dropdown>
@@ -405,7 +456,12 @@ const Home = () => {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <div className="header-mob-menu-icon">
+                <div
+                  onClick={() => {
+                    setIsMobHeaderShowing(true);
+                  }}
+                  className="header-mob-menu-icon"
+                >
                   <MdMenu />
                 </div>
               </div>
