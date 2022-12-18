@@ -154,29 +154,29 @@ const Utility = () => {
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>스키 시즌권</h6>
+                          <p>시즌 일정 홈페이지 참조</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>1회/시즌</p>
                         </div>
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>케이블카 연간 이용권</h6>
+                          <p>왕복/대인기준</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>1회/일</p>
                         </div>
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>워터파크 연간 입장권</h6>
+                          <p>종일/대인기준</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>1회/일</p>
                         </div>
                       </div>
                     </div>
@@ -185,14 +185,14 @@ const Utility = () => {
                 <div className="suites-card-bg">
                   <div className="suites-card">
                     <div className="sc-head">
-                      <h3>Royal Suite</h3>
+                      <h3>Presidential Suite</h3>
                       <span>수량 30개 (0.3%)</span>
                     </div>
                     <div className="sc-body">
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>호텔 객실 무료 숙박권</h6>
+                          <p>드래곤밸리 호텔 디럭스</p>
                         </div>
                         <div className="scb-card-right">
                           <p>1회/년</p>
@@ -200,38 +200,38 @@ const Utility = () => {
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>골프 라운딩 무료 이용권 (1인)</h6>
+                          <p>용평9(퍼블릭) 9H + 카트피(팀) + 동반 30% 할인</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>4회/년</p>
                         </div>
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>케이블카 연간 이용권</h6>
+                          <p>왕복/대인기준</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>1회/일</p>
                         </div>
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>워터파크 연간 입장권</h6>
+                          <p>종일/대인기준</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>1회/일</p>
                         </div>
                       </div>
                       <div className="scb-card">
                         <div className="scb-card-left">
-                          <h6>프리미엄 콘도 무료 숙박권</h6>
-                          <p>베르데힐 38 Type</p>
+                          <h6>리프트 이용권</h6>
+                          <p>주간권/대인 기준, 월 1회</p>
                         </div>
                         <div className="scb-card-right">
-                          <p>1회/년</p>
+                          <p>3회/년</p>
                         </div>
                       </div>
                     </div>
@@ -245,52 +245,43 @@ const Utility = () => {
                           <h3>Executive</h3>
                           <span>Executive</span>
                         </div>
-                        <span>수량 30개 (0.3%)</span>
+                        <span>수량 550개 (5.5%)</span>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>워터파크 연간 입장권</h6>
+                            <p>종일/대인기준</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>1회/일</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>리프트 이용권</h6>
+                            <p>주간권/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>케이블카 이용권</h6>
+                            <p>왕복/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>마운틴코스터 이용권</h6>
+                            <p>대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
-                          </div>
-                        </div>
-                        <div className="scb-card">
-                          <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
-                          </div>
-                          <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                       </div>
@@ -303,52 +294,43 @@ const Utility = () => {
                           <h3>Deluxe</h3>
                           <span>Deluxe</span>
                         </div>
-                        <span>수량 30개 (0.3%)</span>
+                        <span>수량 3,800개 (38%)</span>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>워터파크 입장권</h6>
+                            <p>종일/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>리프트 이용권</h6>
+                            <p>주간권/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>케이블카 이용권</h6>
+                            <p>왕복/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>마운틴코스터 이용권</h6>
+                            <p>대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
-                          </div>
-                        </div>
-                        <div className="scb-card">
-                          <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
-                          </div>
-                          <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                       </div>
@@ -361,43 +343,34 @@ const Utility = () => {
                           <h3>Superior</h3>
                           <span>Superior</span>
                         </div>
-                        <span>수량 30개 (0.3%)</span>
+                        <span>수량 5,590개 (55.9%)</span>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>워터파크 입장권</h6>
+                            <p>종일/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>리프트 이용권</h6>
+                            <p>주간권/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                         <div className="scb-card">
                           <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
+                            <h6>케이블카 이용권</h6>
+                            <p>왕복/대인 기준, 월 1회</p>
                           </div>
                           <div className="scb-card-right">
-                            <p>1회/년</p>
-                          </div>
-                        </div>
-                        <div className="scb-card">
-                          <div className="scb-card-left">
-                            <h6>프리미엄 콘도 무료 숙박권</h6>
-                            <p>베르데힐 38 Type</p>
-                          </div>
-                          <div className="scb-card-right">
-                            <p>1회/년</p>
+                            <p>3회/년</p>
                           </div>
                         </div>
                       </div>

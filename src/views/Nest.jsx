@@ -136,9 +136,9 @@ const Nest = () => {
                     className="color-img"
                   />
                   <img src={NestImg2Dull} alt="NestImg" className="dull-img" />
-                  <p>강원도 평창, 용평리조트 타워콘도</p>
+                  <p>충남 보령, 비체팰리스</p>
                   <img src={NCSwooshImg} alt="" className="nest-swoosh" />
-                  <h6>스키장을 발아래 둔, 높은 만큼 멋진 뷰</h6>
+                  <h6>들어서면 모래사장 서해를 가장 잘 즐길 수 있는 곳</h6>
                 </div>
                 <div className="nest-grid-card">
                   <img
@@ -147,9 +147,12 @@ const Nest = () => {
                     className="color-img"
                   />
                   <img src={NestImg3Dull} alt="NestImg" className="dull-img" />
-                  <p>강원도 평창, 용평리조트 타워콘도</p>
+                  <p>강원도 고성, 파인리즈리조트</p>
                   <img src={NCSwooshImg} alt="" className="nest-swoosh" />
-                  <h6>스키장을 발아래 둔, 높은 만큼 멋진 뷰</h6>
+                  <h6>
+                    페어웨이, 그린이 침대 바로 옆 <br />
+                    1년 내내 초록이 느껴지는 곳
+                  </h6>
                 </div>
                 <div className="nest-grid-card">
                   <img
@@ -158,9 +161,12 @@ const Nest = () => {
                     className="color-img"
                   />
                   <img src={NestImg4Dull} alt="NestImg" className="dull-img" />
-                  <p>강원도 평창, 용평리조트 타워콘도</p>
+                  <p>전남 여수, 디오션 리조트</p>
                   <img src={NCSwooshImg} alt="" className="nest-swoosh" />
-                  <h6>스키장을 발아래 둔, 높은 만큼 멋진 뷰</h6>
+                  <h6>
+                    바다 위의 리조트라 불리는 <br />
+                    계속 바다, 바다, 바다가 펼쳐지는 곳
+                  </h6>
                 </div>
               </div>
               <div className="nest-bottom">

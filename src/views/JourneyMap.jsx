@@ -127,22 +127,26 @@ const JourneyMap = () => {
                       <div className="mcr-box">
                         <span>UPCOMING</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          첫번째 네스트 오픈 <br />
+                          (전용 프리미엄 객실)
                         </p>
                       </div>
                       <div className="mcr-box">
                         <span className="complete">COMPLETE</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          오빌리의 행복한 상상! <br />
+                          등급별 유틸리티 공개
                         </p>
                       </div>
                       <div className="mcr-box">
                         <span>UPCOMING</span>
+                        <p>오빌리 민팅 완료!</p>
+                      </div>
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          오빌리 모습을 드러내다! <br />
+                          PFP, 레어리티 공개
                         </p>
                       </div>
                     </div>
@@ -151,40 +155,109 @@ const JourneyMap = () => {
                 <div className="map-card">
                   <div className="mapcard-left">
                     <h5>
-                      <span>O</span>pening <i>(첫둥지)</i>
+                      <span>V</span>Venture <i>(새로운 모험)</i>
                     </h5>
-                    <p>우리가 궁금해? </p>
-                    <p>우리 친구할까?</p>
+                    <p>뭐하며 놀까?</p>
+                    <p>스키, 골프, 요트 즐길 건 너무나 많아</p>
                   </div>
                   <div className="mapcard-right-bg">
                     <div className="mapcard-right">
                       <div className="mcr-box">
                         <span>UPCOMING</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          특별하게 스키 타고 싶을 때? <br />
+                          빌리언즈만을 위한 스키투어
                         </p>
                       </div>
                       <div className="mcr-box">
                         <span>UPCOMING</span>
-                        <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
-                        </p>
+                        <p>빌리언즈만을 위한 골프 타임</p>
                       </div>
                       <div className="mcr-box">
                         <span className="complete">COMPLETE</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          대한민국 스포츠 영웅과 <br />
+                          함께하는 엄홍길 트래킹
+                        </p>
+                      </div>
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>바다로 가는 빌리언즈, 짠내 투어</p>
+                      </div>
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>스릴 넘치는 즐거움</p>
+                      </div>
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>내 인생의 버킷 레포츠</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="map-card">
+                  <div className="mapcard-left">
+                    <h5>
+                      <span>I</span>nvitation<i>(낯선 초대)</i>
+                    </h5>
+                    <p>다른데 가서 놀까?</p>
+                    <p>새로운 친구는 어때?</p>
+                  </div>
+                  <div className="mapcard-right-bg">
+                    <div className="mapcard-right">
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>
+                          오빌리와 친구들이 함께하는 <br />
+                          새로운 프로젝트
                         </p>
                       </div>
                       <div className="mcr-box">
                         <span>UPCOMING</span>
                         <p>
-                          오빌리의 시작! <br />
-                          특별한 만남 (디스코드, 홈페이지)
+                          빌리언즈를 위한 네스트, <br />
+                          네스트 그리고 네스트
                         </p>
+                      </div>
+                      <div className="mcr-box">
+                        <span className="complete">COMPLETE</span>
+                        <p>빌리언즈를 위한 특별한 공연</p>
+                      </div>
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>빌리언즈만 입장 가능한 홀더파티!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="map-card">
+                  <div className="mapcard-left">
+                    <h5>
+                      <span>L</span>ove<i>(오빌리의 사랑)</i>
+                    </h5>
+                    <p>함께할수록 사랑은 커지겠지?</p>
+                  </div>
+                  <div className="mapcard-right-bg">
+                    <div className="mapcard-right">
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>오빌리 탄생의 비밀 공개</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="map-card">
+                  <div className="mapcard-left">
+                    <h5>
+                      <span>I</span>ntro<i>(더 넓은 세상)</i>
+                    </h5>
+                    <p>또 다른 세상이 궁금해?</p>
+                  </div>
+                  <div className="mapcard-right-bg">
+                    <div className="mapcard-right">
+                      <div className="mcr-box">
+                        <span>UPCOMING</span>
+                        <p>새로운 Journey Map 공개</p>
                       </div>
                     </div>
                   </div>

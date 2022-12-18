@@ -125,44 +125,39 @@ const Faq = () => {
                   <div className="acc-item-border-box">
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>
-                        <h5>오빌리 NFT는 어떤 블록체인을 이용하나요?</h5>
+                        <h5> 민팅 시 어떤 지갑을 이용 하나요?</h5>
                         <MdExpandMore />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          {" "}
-                          오빌리 네스트는 클레이튼(Klaytn) 블록체인을
-                          이용합니다.
+                          오빌리 네스트는 카이카스(Kaikas) 또는 클립(Klip)
+                          지갑을 이용하시면 됩니다.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
                   </div>
                   <div className="acc-item-border-box">
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="2">
                       <Accordion.Header>
-                        <h5>오빌리 NFT는 어떤 블록체인을 이용하나요?</h5>
+                        <h5>2차 판매 로열티가 있나요?</h5>
                         <MdExpandMore />
                       </Accordion.Header>
                       <Accordion.Body>
-                        <p>
-                          {" "}
-                          오빌리 네스트는 클레이튼(Klaytn) 블록체인을
-                          이용합니다.
-                        </p>
+                        <p>2차 판매 로열티는 7.5% 입니다.</p>
                       </Accordion.Body>
                     </Accordion.Item>
                   </div>
                   <div className="acc-item-border-box">
-                    <Accordion.Item eventKey="1">
+                    <Accordion.Item eventKey="3">
                       <Accordion.Header>
-                        <h5>오빌리 NFT는 어떤 블록체인을 이용하나요?</h5>
+                        <h5>저작권을 활용할 수 있나요?</h5>
                         <MdExpandMore />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          {" "}
-                          오빌리 네스트는 클레이튼(Klaytn) 블록체인을
-                          이용합니다.
+                          오빌리 네스트와 관련된 작품에 대하여 임의 변형 및 2차
+                          창작 그리고 상업적 이용을 불허 합니다. NFT 소지자는 각
+                          작품에 대한 소유권만 인정 됩니다
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
