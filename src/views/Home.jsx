@@ -13,12 +13,12 @@ import MobBgImg3 from "../assets/img/3.webp";
 import MobBgImg4 from "../assets/img/4.webp";
 import MobBgImg5 from "../assets/img/5.webp";
 import MobBgImg6 from "../assets/img/6.webp";
-import Ovideo from "../assets/videos/2/o.mp4";
-import Vvideo from "../assets/videos/2/v.mp4";
-import I1video from "../assets/videos/2/i1.mp4";
-import Lvideo from "../assets/videos/2/l.mp4";
-import I2video from "../assets/videos/2/i2.mp4";
-import NESTvideo from "../assets/videos/2/nest.mp4";
+import Ovideo from "../assets/videos/o.mp4";
+import Vvideo from "../assets/videos/v.mp4";
+import I1video from "../assets/videos/i1.mp4";
+import Lvideo from "../assets/videos/l.mp4";
+import I2video from "../assets/videos/i2.mp4";
+import NESTvideo from "../assets/videos/nest.mp4";
 
 // Components
 
@@ -118,48 +118,16 @@ const Home = () => {
     gsap.fromTo(
       ".nest",
       {
-        backgroundPosition: "100% 100%",
-        backgroundSize: "300%",
+        backgroundSize: "100%",
       },
       {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "500%",
-        ease: Power1.easeInOut,
-        repeat: -1,
-        yoyo: true,
-        duration: 20,
-      }
-    );
-    /*  gsap.fromTo(
-      ".v, .i1, .l, .i2",
-      {
-        backgroundPosition: "0",
-        backgroundSize: "400%",
-      },
-      {
-        backgroundPosition: "100%",
-        backgroundSize: "500%",
+        backgroundSize: "150%",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
         duration: 10,
       }
-    ); */
-    /*  gsap.fromTo(
-      ".nest",
-      {
-        backgroundPosition: "0",
-        backgroundSize: "400%",
-      },
-      {
-        backgroundPosition: "100%",
-        backgroundSize: "500%",
-        ease: Power1.easeInOut,
-        repeat: -1,
-        yoyo: true,
-        duration: 15,
-      }
-    ); */
+    );
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
@@ -284,7 +252,7 @@ const Home = () => {
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
-          <video muted loop autoPlay>
+          <video muted loop autoPlay={true}>
             <source src={Ovideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
@@ -301,7 +269,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted loop autoPlay>
+                <video muted loop autoPlay={true}>
                   <source src={Ovideo} type="video/mp4" />
                 </video>
               </div>
