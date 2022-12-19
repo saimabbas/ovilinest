@@ -35,7 +35,12 @@ import {
 } from "gsap/dist/gsap";
 import $ from "jquery";
 import { Dropdown } from "react-bootstrap";
-import { MdKeyboardArrowDown, MdMenu, MdClose } from "react-icons/md";
+import {
+  MdKeyboardArrowDown,
+  MdMenu,
+  MdClose,
+  MdOutlineRotate90DegreesCcw,
+} from "react-icons/md";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
