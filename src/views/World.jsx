@@ -315,7 +315,7 @@ const Nest = () => {
           </div>
         </section>
         <section className="world-section wc-3">
-          <video muted loop autoPlay>
+          <video muted autoPlay loop playsInline>
             <source src={WCVideo3} type="video/mp4" />
           </video>
           <div className="home-box">
