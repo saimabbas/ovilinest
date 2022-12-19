@@ -264,12 +264,7 @@ const Home = () => {
             }}
           ></div> */}
           <video muted autoPlay loop playsInline>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
-              }
-              type="video/mp4"
-            />
+            <source src={Ovideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -286,12 +281,7 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted autoPlay loop playsInline>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                  <source src={Ovideo} type="video/mp4" />
                 </video>
 
                 {/* <div
