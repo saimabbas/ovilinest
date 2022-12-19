@@ -82,6 +82,12 @@
 .wc-1 .world-content {
   padding: 0 0 5rem 0;
 }
+.pc-p {
+  display: block;
+}
+.mob-p {
+  display: none;
+}
 @media screen and (max-width: 875px) {
   .world-section {
     min-height: unset;
@@ -94,6 +100,12 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .pc-p {
+    display: none;
+  }
+  .mob-p {
+    display: block;
+  }
   .world-text-box h2 {
     display: flex;
     flex-direction: column;
