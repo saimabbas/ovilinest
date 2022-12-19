@@ -233,7 +233,7 @@ const Home = () => {
       });
     });
   }, []);
-  $(window).on("load", function () {
+  /* $(window).on("load", function () {
     gsap.fromTo(
       ".loading-screen",
       {
@@ -243,7 +243,7 @@ const Home = () => {
         display: "none",
       }
     );
-  });
+  }); */
   return (
     <div className="app">
       <div className="loading-screen"></div>
