@@ -286,18 +286,7 @@ const Home = () => {
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
-              }
-              type="video/mp4"
-            />
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/1-ski.webm"
-              }
-              type="video/webm"
-            />
+            <source src={OvideoWEBM} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -314,18 +303,7 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
-                    }
-                    type="video/mp4"
-                  />
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/1-ski.webm"
-                    }
-                    type="video/webm"
-                  />
+                  <source src={OvideoMP4} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -338,9 +316,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="letter-box v-box">
+        {/* <div className="letter-box v-box">
           <img src={MobBgImg2} alt="MobBgImg" />
-          <video muted loop autoPlay loading="lazy">
+          <video muted loop autoPlay loading="lazy" width="100" height="100">
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/2-golf.mp4"
@@ -603,7 +581,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <header>
           {isMobHeaderShowing ? (
             <div className="header-mob">

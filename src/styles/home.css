@@ -169,8 +169,8 @@
   transition: 0.75s;
 }
 .letter-box video {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -356,8 +356,8 @@ span.o:hover .o-box.letter-box {
     position: relative;
   }
   .hero-head video {
-    width: 100%;
-    height: 20rem;
+    width: 100% !important;
+    height: 20rem !important;
     border-radius: 1.5rem;
     object-fit: cover;
     position: absolute;
