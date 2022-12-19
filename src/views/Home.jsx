@@ -13,7 +13,7 @@ import MobBgImg3 from "../assets/img/3.webp";
 import MobBgImg4 from "../assets/img/4.webp";
 import MobBgImg5 from "../assets/img/5.webp";
 import MobBgImg6 from "../assets/img/6.webp";
-import Ovideo from "../assets/videos/o.mp4";
+import Ovideo from "../assets/videos/o2.mp4";
 import Vvideo from "../assets/videos/v.mp4";
 import I1video from "../assets/videos/i1.mp4";
 import Lvideo from "../assets/videos/l.mp4";
