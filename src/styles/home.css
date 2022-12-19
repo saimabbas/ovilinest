@@ -221,6 +221,9 @@ span.o:hover .o-box.letter-box {
 .hero-head video {
   display: none;
 }
+.letter-box > img {
+  display: none;
+}
 @media screen and (max-width: 1100px) {
   .hero-content-box h2 {
     font-size: 3.5rem;
