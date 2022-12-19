@@ -18,7 +18,7 @@ body {
   width: 100%;
   background-color: var(--black);
 }
-/* .rotate-screen {
+.rotate-screen {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -26,13 +26,20 @@ body {
   left: 0;
   z-index: 90000;
   display: none;
-  background-color: red;
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+}
+.rotate-screen p {
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: #fff;
 }
 @media screen and (min-width: 300px) and (max-width: 875px) and (orientation: landscape) {
   .rotate-screen {
-    display: block;
+    display: flex;
   }
-} */
+}
 body {
   transition: 0.5s;
 }

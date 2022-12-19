@@ -28,6 +28,7 @@ import { Dropdown, Accordion } from "react-bootstrap";
 import {
   MdKeyboardArrowDown,
   MdMenu,
+  MdOutlineRotate90DegreesCcw,
   MdClose,
   MdExpandMore,
 } from "react-icons/md";
@@ -53,7 +54,11 @@ const Faq = () => {
 
   return (
     <div className="app">
-      <div className="rotate-screen"></div>
+      <div className="rotate-screen">
+        <p>
+          Please rotate the screen <MdOutlineRotate90DegreesCcw />{" "}
+        </p>
+      </div>
       <main className="faq-page">
         <header>
           {isMobHeaderShowing ? (
