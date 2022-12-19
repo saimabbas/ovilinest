@@ -257,15 +257,13 @@ const Home = () => {
           loop
           muted
           autoplay
-          playsinline
-          data-wf-ignore="true" 
-          data-object-fit="cover"
+          playsInline
           src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
         />,
       `,
             }}
           ></div>
-          {/* <video muted autoPlay loop playsinline>
+          {/* <video muted autoPlay loop playsInline>
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
@@ -287,7 +285,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                {/* <video muted autoPlay loop playsinline>
+                {/* <video muted autoPlay loop playsInline>
                   <source
                     src={
                       "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
@@ -303,9 +301,7 @@ const Home = () => {
           loop
           muted
           autoplay
-          playsinline
-          data-wf-ignore="true" 
-          data-object-fit="cover"
+          playsInline
           src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
         />,
       `,
