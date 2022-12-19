@@ -126,10 +126,10 @@ const Utility = () => {
                     Link <MdKeyboardArrowDown />{" "}
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                    <Dropdown.Item href="https://www.yongpyong.co.kr/">
                       YongPyong
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                    <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
                       YouTube
                     </Dropdown.Item>
                   </Dropdown.Menu>

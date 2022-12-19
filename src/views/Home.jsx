@@ -234,35 +234,12 @@ const Home = () => {
       });
     });
   }, []);
-  /* $(window).on("load", function () {
-    gsap.fromTo(
-      ".loading-screen",
-      {
-        display: "block",
-      },
-      {
-        display: "none",
-      }
-    );
-  }); */
   return (
     <div className="app">
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: `
-        <video
-          loop
-          muted
-          autoplay
-          playsInline
-          src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
-        />,
-      `,
-            }}
-          ></div> */}
+
           <video muted autoPlay loop playsInline>
             <source src={Ovideo} type="video/mp4" />
           </video>
@@ -280,11 +257,11 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                {/* <video muted autoPlay loop playsInline>
+                <video muted autoPlay loop playsInline>
                   <source src={Ovideo} type="video/mp4" />
-                </video> */}
+                </video>
 
-                <div
+                {/* <div
                   dangerouslySetInnerHTML={{
                     __html: `
         <video
@@ -296,7 +273,7 @@ const Home = () => {
         />,
       `,
                   }}
-                ></div>
+                ></div> */}
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
@@ -597,10 +574,10 @@ const Home = () => {
                     Link <MdKeyboardArrowDown />{" "}
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                    <Dropdown.Item href="https://www.yongpyong.co.kr/">
                       YongPyong
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                    <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
                       YouTube
                     </Dropdown.Item>
                   </Dropdown.Menu>

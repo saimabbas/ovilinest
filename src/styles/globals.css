@@ -97,6 +97,7 @@ header {
   font-size: 1.6rem;
   color: var(--white);
   font-weight: 500;
+  text-transform: uppercase;
 }
 .header-left a span {
   color: #bcfb69;
