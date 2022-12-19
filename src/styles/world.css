@@ -82,6 +82,14 @@
 .wc-1 .world-content {
   padding: 0 0 5rem 0;
 }
+@media screen and (max-width: 875px) {
+  .world-section {
+    min-height: unset;
+  }
+  .world-content {
+    padding: 5rem 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .world-text-box h2 {
     display: flex;
@@ -93,12 +101,6 @@
   .world-text-box h2 span {
     font-size: 1.75rem;
     margin: 0.75rem 0 0 0;
-  }
-  .world-section {
-    min-height: unset;
-  }
-  .world-content {
-    padding: 5rem 0;
   }
   .world-text-box p {
     font-size: 3.7vw;
