@@ -250,14 +250,27 @@ const Home = () => {
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
-          <video muted autoPlay loop playsinline>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+    <video muted autoPlay loop playsinline>
+    <source
+      src={
+        "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
+      }
+      type="video/mp4"
+    />
+  </video>`,
+            }}
+          />
+          {/* <video muted autoPlay loop playsinline>
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
               }
               type="video/mp4"
             />
-          </video>
+          </video> */}
           <div className="letter-header"></div>
           <div className="letter-body">
             <div className="hero-content-box">
@@ -272,14 +285,27 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted autoPlay loop playsinline>
+                {/* <video muted autoPlay loop playsinline>
                   <source
                     src={
                       "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
                     }
                     type="video/mp4"
                   />
-                </video>
+                </video> */}
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `
+    <video muted autoPlay loop playsinline>
+    <source
+      src={
+        "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
+      }
+      type="video/mp4"
+    />
+  </video>`,
+                  }}
+                />
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
