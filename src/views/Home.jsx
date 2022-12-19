@@ -280,23 +280,23 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted autoPlay loop playsInline>
+                {/* <video muted autoPlay loop playsInline>
                   <source src={Ovideo} type="video/mp4" />
-                </video>
+                </video> */}
 
-                {/* <div
+                <div
                   dangerouslySetInnerHTML={{
                     __html: `
         <video
           loop
           muted
-          autoplay
+          autoPlay
           playsInline
           src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
         />,
       `,
                   }}
-                ></div> */}
+                ></div>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
