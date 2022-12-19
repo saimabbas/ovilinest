@@ -245,6 +245,7 @@ footer {
   font-size: 2rem;
   color: var(--white);
   font-weight: 500;
+  text-transform: uppercase;
 }
 .hmb-content a:hover {
   color: var(--white);
