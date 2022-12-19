@@ -18,6 +18,21 @@ body {
   width: 100%;
   background-color: var(--black);
 }
+@media screen and (orientation: landscape) {
+  html {
+    /* Rotate the content container */
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 body {
   transition: 0.5s;
 }
@@ -53,7 +68,9 @@ header {
   z-index: 1001;
   position: relative;
   transition: 0.5s;
-  border: 1px solid #484848;
+  border-bottom: 1px solid #484848;
+  position: sticky;
+  top: 0;
 }
 .header-content {
   width: 100%;
@@ -82,6 +99,9 @@ header {
   font-weight: 500;
 }
 .header-left a span {
+  color: #bcfb69;
+}
+.hmb-content a span {
   color: #bcfb69;
 }
 .header-left a:hover {
@@ -179,23 +199,23 @@ footer {
   color: var(--white);
 }
 .header-mob {
-  width: 100%;
+  width: 60%;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 10001;
 }
 .header-mob-head {
   width: 100%;
   background-color: var(--black);
-  border: 1px solid #484848;
+  border-bottom: 1px solid #484848;
 }
 .hmh-content {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 7rem;
 }
 .hmh-content img {
@@ -303,7 +323,17 @@ footer {
   }
   header .dropdown button {
     font-size: 2rem;
-    padding: 0.75rem 2.5rem;
+    padding: 0;
+    background-color: transparent;
+  }
+  header .dropdown button svg {
+    font-size: 2.25rem;
+  }
+  header .dropdown button:hover,
+  header .dropdown button:active,
+  header .dropdown button:focus-visible,
+  header .dropdown button:focus {
+    background-color: transparent !important;
   }
   header .dropdown .dropdown-menu a {
     font-size: 1.75rem;

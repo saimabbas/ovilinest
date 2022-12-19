@@ -75,9 +75,6 @@ const Nest = () => {
               <div className="header-mob-head">
                 <div className="home-box">
                   <div className="hmh-content">
-                    <Link to="/">
-                      <img src={Logo1} alt="Logo1" />
-                    </Link>
                     <div
                       onClick={() => {
                         setIsMobHeaderShowing(false);
@@ -94,7 +91,7 @@ const Nest = () => {
                   <div className="hmb-content">
                     <Link to="/world">WORLD</Link>
                     <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">UTLITY</Link>
+                    <Link to="/utility">Utility</Link>
                     <Link to="/nest">
                       <span>NEST</span>
                     </Link>
@@ -105,10 +102,10 @@ const Nest = () => {
                         Link <MdKeyboardArrowDown />{" "}
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.yongpyong.co.kr/">
                           YongPyong
                         </Dropdown.Item>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
                           YouTube
                         </Dropdown.Item>
                       </Dropdown.Menu>
@@ -127,7 +124,7 @@ const Nest = () => {
                 </Link>
                 <Link to="/world">WORLD</Link>
                 <Link to="/journeymap">JOURNEY MAP</Link>
-                <Link to="/utility">UTLITY</Link>
+                <Link to="/utility">Utility</Link>
                 <Link to="/nest">
                   <span>NEST</span>
                 </Link>

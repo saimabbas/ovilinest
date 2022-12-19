@@ -57,6 +57,7 @@
   width: 100%;
   background-color: var(--black);
   padding: 2rem;
+  height: 100%;
 }
 .mcr-box {
   width: 100%;
@@ -84,6 +85,12 @@
 }
 .mcr-box:last-child {
   margin: 0;
+}
+.complete {
+  background: linear-gradient(to right, #bcfb69, #26bbac) !important;
+}
+.complete + p {
+  font-weight: 700 !important;
 }
 @media screen and (max-width: 600px) {
   .map-card {

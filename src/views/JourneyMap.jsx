@@ -87,9 +87,6 @@ const JourneyMap = () => {
               <div className="header-mob-head">
                 <div className="home-box">
                   <div className="hmh-content">
-                    <Link to="/">
-                      <img src={Logo1} alt="Logo1" />
-                    </Link>
                     <div
                       onClick={() => {
                         setIsMobHeaderShowing(false);
@@ -108,7 +105,7 @@ const JourneyMap = () => {
                     <Link to="/journeymap">
                       <span>JOURNEY MAP</span>
                     </Link>
-                    <Link to="/utility">UTLITY</Link>
+                    <Link to="/utility">Utility</Link>
                     <Link to="/nest">NEST</Link>
                     <Link to="/guide">GUIDE</Link>
                     <Link to="/faq">FAQ</Link>
@@ -117,10 +114,10 @@ const JourneyMap = () => {
                         Link <MdKeyboardArrowDown />{" "}
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.yongpyong.co.kr/">
                           YongPyong
                         </Dropdown.Item>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
                           YouTube
                         </Dropdown.Item>
                       </Dropdown.Menu>
@@ -141,7 +138,7 @@ const JourneyMap = () => {
                 <Link to="/journeymap">
                   <span>JOURNEY MAP</span>
                 </Link>
-                <Link to="/utility">UTLITY</Link>
+                <Link to="/utility">Utility</Link>
                 <Link to="/nest">NEST</Link>
                 <div></div>
                 <Link to="/guide">GUIDE</Link>
@@ -252,7 +249,7 @@ const JourneyMap = () => {
                         <p>빌리언즈만을 위한 골프 타임</p>
                       </div>
                       <div className="mcr-box">
-                        <span className="complete">COMPLETE</span>
+                        <span>UPCOMING</span>
                         <p>
                           대한민국 스포츠 영웅과 <br />
                           함께하는 엄홍길 트래킹
@@ -298,7 +295,7 @@ const JourneyMap = () => {
                         </p>
                       </div>
                       <div className="mcr-box">
-                        <span className="complete">COMPLETE</span>
+                        <span>UPCOMING</span>
                         <p>빌리언즈를 위한 특별한 공연</p>
                       </div>
                       <div className="mcr-box">

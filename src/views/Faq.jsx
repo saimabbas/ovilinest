@@ -66,9 +66,6 @@ const Faq = () => {
               <div className="header-mob-head">
                 <div className="home-box">
                   <div className="hmh-content">
-                    <Link to="/">
-                      <img src={Logo1} alt="Logo1" />
-                    </Link>
                     <div
                       onClick={() => {
                         setIsMobHeaderShowing(false);
@@ -85,7 +82,7 @@ const Faq = () => {
                   <div className="hmb-content">
                     <Link to="/world">WORLD</Link>
                     <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">UTLITY</Link>
+                    <Link to="/utility">Utility</Link>
                     <Link to="/nest">NEST</Link>
                     <Link to="/guide">GUIDE</Link>
                     <Link to="/faq">
@@ -96,10 +93,10 @@ const Faq = () => {
                         Link <MdKeyboardArrowDown />{" "}
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.yongpyong.co.kr/">
                           YongPyong
                         </Dropdown.Item>
-                        <Dropdown.Item href="https://drive.google.com/drive/YoungPyung ">
+                        <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
                           YouTube
                         </Dropdown.Item>
                       </Dropdown.Menu>
@@ -118,7 +115,7 @@ const Faq = () => {
                 </Link>
                 <Link to="/world">WORLD</Link>
                 <Link to="/journeymap">JOURNEY MAP</Link>
-                <Link to="/utility">UTLITY</Link>
+                <Link to="/utility">Utility</Link>
                 <Link to="/nest">NEST</Link>
                 <div></div>
                 <Link to="/guide">GUIDE</Link>
@@ -185,7 +182,7 @@ const Faq = () => {
                   <div className="acc-item-border-box">
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>
-                        <h5> 민팅 시 어떤 지갑을 이용 하나요?</h5>
+                        <h5> 민팅 시 어떤 지갑을 이용하나요?</h5>
                         <MdExpandMore />
                       </Accordion.Header>
                       <Accordion.Body>

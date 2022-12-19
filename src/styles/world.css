@@ -13,7 +13,7 @@
   left: 0;
   z-index: 5;
 }
-.wc-2 img {
+.wc-2 > img {
   width: 60%;
   object-fit: contain;
   position: absolute;
@@ -40,6 +40,10 @@
   top: 0;
   left: 0;
   z-index: 6;
+}
+.wc-2 .world-text-box img {
+  height: 1.5rem;
+  margin: -0.5rem 0.25rem 0 0.25rem;
 }
 .world-content {
   width: 100%;
