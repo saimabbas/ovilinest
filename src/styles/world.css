@@ -87,7 +87,10 @@
     min-height: unset;
   }
   .world-content {
-    padding: 5rem 0;
+    padding: 7.5rem 0;
+  }
+  .wc-2 > img {
+    width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -97,6 +100,9 @@
   }
   .world-text-box h2 {
     font-size: 3rem;
+  }
+  .world-content {
+    padding: 5rem 0;
   }
   .world-text-box h2 span {
     font-size: 1.75rem;
