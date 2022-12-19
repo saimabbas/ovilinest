@@ -14,9 +14,9 @@ import MobBgImg4 from "../assets/img/4.webp";
 import MobBgImg5 from "../assets/img/5.webp";
 import MobBgImg6 from "../assets/img/6.webp";
 import Ovideo from "../assets/videos/o2.mp4";
-import Vvideo from "../assets/videos/v.mp4";
-import I1video from "../assets/videos/i1.mp4";
-import Lvideo from "../assets/videos/l.mp4";
+import Vvideo from "../assets/videos/v2.mp4";
+import I1video from "../assets/videos/i12.mp4";
+import Lvideo from "../assets/videos/l2.mp4";
 import I2video from "../assets/videos/i2.mp4";
 import NESTvideo from "../assets/videos/nest.mp4";
 
@@ -277,8 +277,8 @@ const Home = () => {
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -287,13 +287,8 @@ const Home = () => {
         </div>
         <div className="letter-box v-box">
           <img src={MobBgImg2} alt="MobBgImg" />
-          <video muted loop autoPlay loading="lazy" width="100" height="100">
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/2-golf.mp4"
-              }
-              type="video/mp4"
-            />
+          <video muted autoPlay loop playsInline>
+            <source src={Vvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -310,26 +305,14 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video
-                  muted
-                  loop
-                  autoPlay
-                  loading="lazy"
-                  width="100"
-                  height="100"
-                >
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/2-golf.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                <video muted autoPlay loop playsInline>
+                  <source src={Vvideo} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -338,13 +321,8 @@ const Home = () => {
         </div>
         <div className="letter-box i1-box">
           <img src={MobBgImg3} alt="MobBgImg" />
-          <video muted loop autoPlay>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/3-yacht.mp4"
-              }
-              type="video/mp4"
-            />
+          <video muted autoPlay loop playsInline>
+            <source src={I1video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -360,19 +338,14 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted loop autoPlay>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/3-yacht.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                <video muted autoPlay loop playsInline>
+                  <source src={I1video} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -381,13 +354,8 @@ const Home = () => {
         </div>
         <div className="letter-box l-box">
           <img src={MobBgImg4} alt="MobBgImg" />
-          <video muted loop autoPlay>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/4-skywalk.mp4"
-              }
-              type="video/mp4"
-            />
+          <video muted autoPlay loop playsInline>
+            <source src={Lvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -404,19 +372,14 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted loop autoPlay>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/4-skywalk.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                <video muted autoPlay loop playsInline>
+                  <source src={Lvideo} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -425,7 +388,7 @@ const Home = () => {
         </div>
         <div className="letter-box i2-box">
           <img src={MobBgImg5} alt="MobBgImg" />
-          <video muted loop autoPlay>
+          <video muted autoPlay loop playsInline>
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
@@ -447,7 +410,7 @@ const Home = () => {
                   </span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted loop autoPlay>
+                <video muted autoPlay loop playsInline>
                   <source
                     src={
                       "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
@@ -458,8 +421,8 @@ const Home = () => {
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -468,7 +431,7 @@ const Home = () => {
         </div>
         <div className="letter-box nest-box">
           <img src={MobBgImg6} alt="MobBgImg" />
-          <video muted loop autoPlay>
+          <video muted autoPlay loop playsInline>
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/6-monaYP.mp4"
@@ -490,7 +453,7 @@ const Home = () => {
                     <i className="i-left">OViLi</i>nest
                   </span>
                 </h1>
-                <video muted loop autoPlay>
+                <video muted autoPlay loop playsInline>
                   <source
                     src={
                       "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/6-monaYP.mp4"
@@ -501,8 +464,8 @@ const Home = () => {
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
               <p>
-                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                 입니다. <br />
                 오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
               </p>
@@ -609,10 +572,12 @@ const Home = () => {
                     <span className="fatface nest">nest</span>
                   </h1>
                 </div>
-                <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
+                <h2>
+                  “Hi, Villionz! <br /> Welcome to Ovili nest”
+                </h2>
                 <p>
-                  오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이“를
-                  모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로 젝트
+                  오빌리 네스트는 발왕산에 서식하는 천연기념물 “수리부엉이” 를
+                  모티브로 <br /> 용평리조트에서 운영하는 NFT 멤버십 프로젝트
                   입니다. <br />
                   오빌리와 함께 신나고 즐거운 모험을 떠나보세요!
                 </p>

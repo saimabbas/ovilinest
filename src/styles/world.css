@@ -73,7 +73,6 @@
   font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
-  max-width: 400px;
   margin: 0 auto;
 }
 .world-content {
@@ -100,5 +99,8 @@
   }
   .world-content {
     padding: 5rem 0;
+  }
+  .world-text-box p {
+    font-size: 3.7vw;
   }
 }
