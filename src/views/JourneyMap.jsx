@@ -77,7 +77,7 @@ const JourneyMap = () => {
     <div className="app">
       <div className="rotate-screen">
         <p>
-          Please Rotate The Screen <MdOutlineRotate90DegreesCcw />{" "}
+          화면을 돌려주세요. <MdOutlineRotate90DegreesCcw />{" "}
         </p>
       </div>
       <main className="map-page">
