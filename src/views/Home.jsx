@@ -17,8 +17,8 @@ import Ovideo from "../assets/videos/o2.mp4";
 import Vvideo from "../assets/videos/v2.mp4";
 import I1video from "../assets/videos/i12.mp4";
 import Lvideo from "../assets/videos/l2.mp4";
-import I2video from "../assets/videos/i2.mp4";
-import NESTvideo from "../assets/videos/nest.mp4";
+import I2video from "../assets/videos/i22.mp4";
+import NESTvideo from "../assets/videos/nest2.mp4";
 
 // Components
 
@@ -389,12 +389,7 @@ const Home = () => {
         <div className="letter-box i2-box">
           <img src={MobBgImg5} alt="MobBgImg" />
           <video muted autoPlay loop playsInline>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
-              }
-              type="video/mp4"
-            />
+            <source src={I2video} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -411,12 +406,7 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted autoPlay loop playsInline>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                  <source src={I2video} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -432,12 +422,7 @@ const Home = () => {
         <div className="letter-box nest-box">
           <img src={MobBgImg6} alt="MobBgImg" />
           <video muted autoPlay loop playsInline>
-            <source
-              src={
-                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/6-monaYP.mp4"
-              }
-              type="video/mp4"
-            />
+            <source src={NESTvideo} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -454,12 +439,7 @@ const Home = () => {
                   </span>
                 </h1>
                 <video muted autoPlay loop playsInline>
-                  <source
-                    src={
-                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/6-monaYP.mp4"
-                    }
-                    type="video/mp4"
-                  />
+                  <source src={NESTvideo} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
