@@ -128,6 +128,7 @@ const Home = () => {
         duration: 10,
       }
     );
+
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
@@ -246,11 +247,10 @@ const Home = () => {
   }); */
   return (
     <div className="app">
-      <div className="loading-screen"></div>
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
-          <video muted loop autoPlay={true}>
+          <video muted autoPlay loop playsinline>
             <source
               src={
                 "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
@@ -272,7 +272,7 @@ const Home = () => {
                   <span className="fatface i2">i</span>
                   <span className="fatface nest">nest</span>
                 </h1>
-                <video muted loop autoPlay={true}>
+                <video muted autoPlay loop playsinline>
                   <source
                     src={
                       "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
