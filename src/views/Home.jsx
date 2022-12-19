@@ -7,6 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images & Videos
 import Logo1 from "../assets/img/logo-1.png";
+import MobBgImg1 from "../assets/img/1.png";
+import MobBgImg2 from "../assets/img/2.png";
+import MobBgImg3 from "../assets/img/3.png";
+import MobBgImg4 from "../assets/img/4.png";
+import MobBgImg5 from "../assets/img/5.png";
+import MobBgImg6 from "../assets/img/6.png";
 import OvideoMP4 from "../assets/videos/1-ski.mp4";
 import OvideoWEBM from "../assets/videos/1-ski.webm";
 import Vvideo from "../assets/videos/v.mp4";
@@ -278,8 +284,20 @@ const Home = () => {
     <div className="app">
       <main className="home-page">
         <div className="letter-box o-box">
+          <img src={MobBgImg1} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source src={OvideoMP4} type="video/mp4" />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/1-ski.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -296,7 +314,18 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={OvideoMP4} type="video/mp4" />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/1-ski.webm"
+                    }
+                    type="video/webm"
+                  />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -310,8 +339,20 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box v-box">
-          <video muted loop autoPlay>
-            <source src={Vvideo} type="video/mp4" />
+          <img src={MobBgImg2} alt="MobBgImg" />
+          <video muted loop autoPlay loading="lazy">
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/2-golf.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/2-golf.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -329,7 +370,18 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={Vvideo} type="video/mp4" />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/2-golf.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/2-golf.webm"
+                    }
+                    type="video/webm"
+                  />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -343,8 +395,20 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i1-box">
+          <img src={MobBgImg3} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source src={I1video} type="video/mp4" />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/3-1-yacht.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/3-yacht.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -361,7 +425,18 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={I1video} type="video/mp4" />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/3-1-yacht.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/3-yacht.webm"
+                    }
+                    type="video/webm"
+                  />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -375,8 +450,20 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box l-box">
+          <img src={MobBgImg4} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source src={Lvideo} type="video/mp4" />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/4-3-skywalk.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/4-skywalk.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -394,7 +481,18 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={Lvideo} type="video/mp4" />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/4-3-skywalk.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/4-skywalk.webm"
+                    }
+                    type="video/webm"
+                  />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -408,8 +506,20 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box i2-box">
+          <img src={MobBgImg5} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source src={I2video} type="video/mp4" />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/5-concert.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -426,7 +536,18 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={I2video} type="video/mp4" />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/5-concert.mp4"
+                    }
+                    type="video/mp4"
+                  />
+                  <source
+                    src={
+                      "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/5-concert.webm"
+                    }
+                    type="video/webm"
+                  />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
@@ -440,8 +561,20 @@ const Home = () => {
           </div>
         </div>
         <div className="letter-box nest-box">
+          <img src={MobBgImg6} alt="MobBgImg" />
           <video muted loop autoPlay>
-            <source src={NESTvideo} type="video/mp4" />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/6-monaYP.mp4"
+              }
+              type="video/mp4"
+            />
+            <source
+              src={
+                "https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/videowebm/6-monaYP.webm"
+              }
+              type="video/webm"
+            />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
