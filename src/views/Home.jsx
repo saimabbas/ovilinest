@@ -258,6 +258,8 @@ const Home = () => {
           muted
           autoplay
           playsinline
+          data-wf-ignore="true" 
+          data-object-fit="cover"
           src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
         />,
       `,
@@ -302,6 +304,8 @@ const Home = () => {
           muted
           autoplay
           playsinline
+          data-wf-ignore="true" 
+          data-object-fit="cover"
           src="https://ovilinest-web-resource.s3.ap-northeast-2.amazonaws.com/video/1-ski.mp4"
         />,
       `,
