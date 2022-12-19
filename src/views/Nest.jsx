@@ -102,10 +102,16 @@ const Nest = () => {
                         Link <MdKeyboardArrowDown />{" "}
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
-                        <Dropdown.Item href="https://www.yongpyong.co.kr/">
+                        <Dropdown.Item
+                          href="https://www.yongpyong.co.kr/"
+                          target={"_blank"}
+                        >
                           YongPyong
                         </Dropdown.Item>
-                        <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
+                        <Dropdown.Item
+                          href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                          target={"_blank"}
+                        >
                           YouTube
                         </Dropdown.Item>
                       </Dropdown.Menu>
@@ -138,10 +144,16 @@ const Nest = () => {
                     Link <MdKeyboardArrowDown />{" "}
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="https://www.yongpyong.co.kr/">
+                    <Dropdown.Item
+                      href="https://www.yongpyong.co.kr/"
+                      target={"_blank"}
+                    >
                       YongPyong
                     </Dropdown.Item>
-                    <Dropdown.Item href="https://www.youtube.com/@user-vr9uv2nn5b/featured">
+                    <Dropdown.Item
+                      href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                      target={"_blank"}
+                    >
                       YouTube
                     </Dropdown.Item>
                   </Dropdown.Menu>
