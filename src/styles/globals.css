@@ -33,6 +33,15 @@ body {
     display: block;
   }
 } */
+.loading-screen {
+  width: 100%;
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 91000;
+}
 body {
   transition: 0.5s;
 }
