@@ -18,21 +18,21 @@ body {
   width: 100%;
   background-color: var(--black);
 }
-@media screen and (orientation: landscape) {
-  html {
-    /* Rotate the content container */
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    /* Set content width to viewport height */
-    width: 100vh;
-    /* Set content height to viewport width */
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
+/* .rotate-screen {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90000;
+  display: none;
+  background-color: red;
 }
+@media screen and (min-width: 300px) and (max-width: 875px) and (orientation: landscape) {
+  .rotate-screen {
+    display: block;
+  }
+} */
 body {
   transition: 0.5s;
 }

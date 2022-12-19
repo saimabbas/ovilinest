@@ -105,7 +105,7 @@
   transform: translate(0, 0);
 }
 .o {
-  background-image: url("./../assets/img/o.jpg");
+  background-image: url("./../assets/img/video1.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -114,7 +114,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .v {
-  background-image: url("./../assets/img/v.jpg");
+  background-image: url("./../assets/img/video2.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -123,7 +123,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .i1 {
-  background-image: url("./../assets/img/i1.jpg");
+  background-image: url("./../assets/img/video3.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +132,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .l {
-  background-image: url("./../assets/img/l.jpg");
+  background-image: url("./../assets/img/video4.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -141,7 +141,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .i2 {
-  background-image: url("./../assets/img/i2.jpg");
+  background-image: url("./../assets/img/video5.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -150,7 +150,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .nest {
-  background-image: url("./../assets/img/nest.jpg");
+  background-image: url("./../assets/img/video6.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

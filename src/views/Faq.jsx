@@ -59,6 +59,7 @@ const Faq = () => {
 
   return (
     <div className="app">
+      <div className="rotate-screen"></div>
       <main className="faq-page">
         <header>
           {isMobHeaderShowing ? (

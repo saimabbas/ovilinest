@@ -42,7 +42,7 @@
   z-index: 6;
 }
 .wc-2 .world-text-box img {
-  height: 1.5rem;
+  height: 1.75rem;
   margin: -0.5rem 0.25rem 0 0.25rem;
 }
 .world-content {
@@ -58,20 +58,20 @@
 }
 .world-text-box h2 {
   color: #bcfb69;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 700;
   margin: 0 0 2.5rem 0;
   text-align: center;
 }
 .world-text-box h2 span {
   color: var(--white);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .world-text-box p {
   color: var(--white);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
   text-align: center;
   max-width: 400px;
   margin: 0 auto;

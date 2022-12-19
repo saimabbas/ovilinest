@@ -7,7 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images & Videos
 import Logo1 from "../assets/img/logo-1.png";
-import Ovideo from "../assets/videos/o.mp4";
+import OvideoMP4 from "../assets/videos/1-ski.mp4";
+import OvideoWEBM from "../assets/videos/1-ski.webm";
 import Vvideo from "../assets/videos/v.mp4";
 import I1video from "../assets/videos/i1.mp4";
 import Lvideo from "../assets/videos/l.mp4";
@@ -35,7 +36,97 @@ const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   useEffect(() => {
     gsap.fromTo(
-      ".o, .v, .i1, .l, .i2",
+      ".o",
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "200%",
+      },
+      {
+        backgroundPosition: "100% 100%",
+        backgroundSize: "300%",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 20,
+      }
+    );
+    gsap.fromTo(
+      ".v",
+      {
+        backgroundPosition: "50% 50%",
+        backgroundSize: "300%",
+      },
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "400%",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 15,
+      }
+    );
+    gsap.fromTo(
+      ".i1",
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "200%",
+      },
+      {
+        backgroundPosition: "50% 100%",
+        backgroundSize: "400%",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 15,
+      }
+    );
+    gsap.fromTo(
+      ".l",
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "400%",
+      },
+      {
+        backgroundPosition: "100% 100%",
+        backgroundSize: "250%",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 20,
+      }
+    );
+    gsap.fromTo(
+      ".i2",
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "cover",
+      },
+      {
+        backgroundPosition: "100% 100%",
+        backgroundSize: "cover",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 10,
+      }
+    );
+    gsap.fromTo(
+      ".nest",
+      {
+        backgroundPosition: "100% 100%",
+        backgroundSize: "300%",
+      },
+      {
+        backgroundPosition: "0% 0%",
+        backgroundSize: "500%",
+        ease: Power1.easeInOut,
+        repeat: -1,
+        yoyo: true,
+        duration: 20,
+      }
+    );
+    /*  gsap.fromTo(
+      ".v, .i1, .l, .i2",
       {
         backgroundPosition: "0",
         backgroundSize: "400%",
@@ -48,8 +139,8 @@ const Home = () => {
         yoyo: true,
         duration: 10,
       }
-    );
-    gsap.fromTo(
+    ); */
+    /*  gsap.fromTo(
       ".nest",
       {
         backgroundPosition: "0",
@@ -63,7 +154,7 @@ const Home = () => {
         yoyo: true,
         duration: 15,
       }
-    );
+    ); */
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
@@ -188,7 +279,7 @@ const Home = () => {
       <main className="home-page">
         <div className="letter-box o-box">
           <video muted loop autoPlay>
-            <source src={Ovideo} type="video/mp4" />
+            <source src={OvideoMP4} type="video/mp4" />
           </video>
           <div className="letter-header"></div>
           <div className="letter-body">
@@ -205,7 +296,7 @@ const Home = () => {
                   <span className="fatface nest">nest</span>
                 </h1>
                 <video muted loop autoPlay>
-                  <source src={Ovideo} type="video/mp4" />
+                  <source src={OvideoMP4} type="video/mp4" />
                 </video>
               </div>
               <h2>“Hi, Villionz! Welcome to Ovili nest”</h2>
