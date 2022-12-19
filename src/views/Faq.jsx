@@ -9,12 +9,6 @@ import "../styles/faq.css";
 // Images & Videos
 import Logo1 from "../assets/img/logo-1.png";
 import FaqBgImg from "../assets/img/faq-bg.png";
-import Ovideo from "../assets/videos/o.mp4";
-import Vvideo from "../assets/videos/v.mp4";
-import I1video from "../assets/videos/i1.mp4";
-import Lvideo from "../assets/videos/l.mp4";
-import I2video from "../assets/videos/i2.mp4";
-import NESTvideo from "../assets/videos/nest.mp4";
 
 // Components
 
