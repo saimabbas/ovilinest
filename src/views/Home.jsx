@@ -236,6 +236,11 @@ const Home = () => {
   }, []);
   return (
     <div className="app">
+      <div className="rotate-screen">
+        <p>
+          Please Rotate The Screen <MdOutlineRotate90DegreesCcw />{" "}
+        </p>
+      </div>
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />

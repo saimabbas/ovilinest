@@ -56,7 +56,7 @@ const Faq = () => {
     <div className="app">
       <div className="rotate-screen">
         <p>
-          Please rotate the screen <MdOutlineRotate90DegreesCcw />{" "}
+          Please Rotate The Screen <MdOutlineRotate90DegreesCcw />{" "}
         </p>
       </div>
       <main className="faq-page">

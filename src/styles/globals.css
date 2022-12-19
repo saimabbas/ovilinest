@@ -35,6 +35,9 @@ body {
   font-weight: 400;
   color: #fff;
 }
+.rotate-screen p svg {
+  font-size: 2rem;
+}
 @media screen and (min-width: 300px) and (max-width: 875px) and (orientation: landscape) {
   .rotate-screen {
     display: flex;

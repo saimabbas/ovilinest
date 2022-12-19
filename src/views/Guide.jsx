@@ -54,6 +54,11 @@ const Guide = () => {
 
   return (
     <div className="app">
+      <div className="rotate-screen">
+        <p>
+          Please Rotate The Screen <MdOutlineRotate90DegreesCcw />{" "}
+        </p>
+      </div>
       <main className="guide-page">
         <header>
           {isMobHeaderShowing ? (
