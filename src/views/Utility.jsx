@@ -182,7 +182,12 @@ const Utility = () => {
               <div className="utility-grid">
                 <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
-                    <link rel="preload" href={CBImg1} as="image" />
+                    <link
+                      rel="preload"
+                      href={CBImg1}
+                      as="image"
+                      loading="eager"
+                    />
                     <img src={CBImg1} alt="CBImg1" />
                     <div className="cbc-content">
                       <p>공통혜택 1</p>
@@ -196,8 +201,7 @@ const Utility = () => {
                 </div>
                 <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
-                    <link rel="preload" href={CBImg2} as="image" />
-                    <img src={CBImg2} alt="CBImg1" />
+                    <img src={CBImg2} alt="CBImg1" loading="eager" />
                     <div className="cbc-content">
                       <p>공통혜택 2</p>
                       <h6>신규 콘도 분양 2% (최대 3천만원) 할인</h6>
