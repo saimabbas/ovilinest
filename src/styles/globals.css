@@ -18,6 +18,10 @@ body {
   width: 100%;
   background-color: var(--black);
 }
+/* .app {
+  overflow-x: hidden;
+  width: 100%;
+} */
 .rotate-screen {
   width: 100%;
   height: 100vh;
@@ -255,6 +259,8 @@ footer {
   font-size: 2rem;
   color: var(--white);
   font-weight: 500;
+}
+.hmb-content > a {
   text-transform: uppercase;
 }
 .hmb-content a:hover {
@@ -302,6 +308,14 @@ footer {
   height: 3px;
   background: linear-gradient(to right, #bcfb69, #26bbac);
 }
+@media screen and (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-top div {
+    display: none;
+  }
+}
 @media screen and (max-width: 875px) {
   .header-left *:not(:first-child) {
     display: none;
@@ -311,12 +325,6 @@ footer {
   }
   .header-mob-menu-icon {
     display: block;
-  }
-  .footer-top {
-    flex-direction: column;
-  }
-  .footer-top div {
-    display: none;
   }
 }
 @media screen and (max-width: 600px) {
