@@ -56,6 +56,19 @@ const Utility = () => {
     });
   }, []);
 
+  var files = [
+    new Image(),
+    document.createElement("link"),
+    document.createElement("script"),
+  ];
+
+  files[0].setAttribute("src", { CBImg1 });
+  files[1].setAttribute("src", { CBImg1 });
+  window.onload = function (e) {
+    document.getElementsByTagName("head")[0].appendChild(files[0]);
+    document.getElementsByTagName("head")[0].appendChild(files[2]);
+  };
+
   return (
     <div className="app">
       <div className="rotate-screen">
