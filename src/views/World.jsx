@@ -287,6 +287,8 @@ const Nest = () => {
           </div>
         </section>
         <section className="world-section wc-2">
+          <div className="wc-3-grd"></div>
+
           <img src={WCImg2} alt="world" />
           <div className="home-box">
             <div className="world-content">
@@ -328,6 +330,7 @@ const Nest = () => {
           </div>
         </section>
         <section className="world-section wc-3">
+          <div className="wc-3-grd"></div>
           <video muted autoPlay loop playsInline>
             <source src={WCVideo3} type="video/mp4" />
           </video>
