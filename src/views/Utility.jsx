@@ -182,13 +182,7 @@ const Utility = () => {
               <div className="utility-grid">
                 <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
-                    <link
-                      rel="preload"
-                      href={CBImg1}
-                      as="image"
-                      loading="eager"
-                    />
-                    <img src={CBImg1} alt="CBImg1" />
+                    <img src={CBImg1} alt="CBImg1" loading="eager" />
                     <div className="cbc-content">
                       <p>공통혜택 1</p>
                       <h6>네스트 예약</h6>
