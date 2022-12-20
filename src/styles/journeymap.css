@@ -50,6 +50,7 @@
   width: 100%;
   background: linear-gradient(to right, #bcfb69, #26bbac);
   border-radius: 2rem 0 2rem 0;
+  height: max-content;
   padding: 0.2rem;
 }
 .mapcard-right {
@@ -57,7 +58,7 @@
   width: 100%;
   background-color: var(--black);
   padding: 2rem;
-  height: 100%;
+  height: max-content;
 }
 .mcr-box {
   width: 100%;

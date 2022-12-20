@@ -13,10 +13,12 @@ import {
   Router,
   useLocation,
 } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <>
       <Switch>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/faq" element={<Faq />} />

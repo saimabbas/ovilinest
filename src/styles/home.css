@@ -227,10 +227,10 @@ span.o:hover .o-box.letter-box {
 .hero-content-box h2 br {
   display: none;
 }
-.hero-content-box p:nth-of-type(1) {
+.hero-section .hero-content-box p:nth-of-type(1) {
   display: block;
 }
-.hero-content-box p:nth-of-type(2) {
+.hero-section .hero-content-box p:nth-of-type(2) {
   display: none;
 }
 @media screen and (max-width: 1100px) {
@@ -371,8 +371,8 @@ span.o:hover .o-box.letter-box {
     object-fit: cover;
     position: absolute;
     left: 0;
-    bottom: 0;
-    transform: translate(0, 100%);
+    top: 100%;
+    transform: translate(0, 15%);
     z-index: 850;
     display: block;
   }
@@ -387,10 +387,10 @@ span.o:hover .o-box.letter-box {
   .hero-content-box h2 br {
     display: block;
   }
-  .hero-content-box p:nth-of-type(1) {
+  .hero-section .hero-content-box p:nth-of-type(1) {
     display: none;
   }
-  .hero-content-box p:nth-of-type(2) {
+  .hero-section .hero-content-box p:nth-of-type(2) {
     display: block;
   }
 }

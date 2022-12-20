@@ -11,6 +11,7 @@ import "../styles/utility.css";
 import Logo1 from "../assets/img/logo-1.png";
 import CBImg1 from "../assets/img/common-benefits-img-1.png";
 import CBImg2 from "../assets/img/common-benefits-img-2.png";
+import SuiteBGImg from "../assets/img/utility-suite-bg.png";
 
 // Components
 
@@ -181,6 +182,7 @@ const Utility = () => {
               <div className="utility-grid">
                 <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
+                    <link rel="preload" href={CBImg1} as="image" />
                     <img src={CBImg1} alt="CBImg1" />
                     <div className="cbc-content">
                       <p>공통혜택 1</p>
@@ -194,7 +196,8 @@ const Utility = () => {
                 </div>
                 <div className="common-benefits-card-bg utility-card-anim">
                   <div className="common-benefits-card">
-                    <img src={CBImg1} alt="CBImg1" />
+                    <link rel="preload" href={CBImg2} as="image" />
+                    <img src={CBImg2} alt="CBImg1" />
                     <div className="cbc-content">
                       <p>공통혜택 2</p>
                       <h6>신규 콘도 분양 2% (최대 3천만원) 할인</h6>
@@ -209,6 +212,7 @@ const Utility = () => {
                 <div className="suites-card-bg utility-card-anim">
                   <div className="suites-card">
                     <div className="sc-head">
+                      <img src={SuiteBGImg} alt="" />
                       <h3>Royal Suite</h3>
                       <span>수량 30개 (0.3%)</span>
                     </div>
@@ -255,6 +259,7 @@ const Utility = () => {
                 <div className="suites-card-bg utility-card-anim">
                   <div className="suites-card">
                     <div className="sc-head">
+                      <img src={SuiteBGImg} alt="" />
                       <h3>Presidential Suite</h3>
                       <span>수량 30개 (0.3%)</span>
                     </div>

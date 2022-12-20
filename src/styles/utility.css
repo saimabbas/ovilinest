@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  z-index: 20;
 }
 .common-benefits-card > img {
   width: 100%;
@@ -49,7 +50,7 @@
 }
 .cbc-content p {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   color: var(--white);
 }
 .cbc-content h6 {
@@ -60,10 +61,20 @@
 }
 .common-benefits-card-bg {
   width: 100%;
-  background: linear-gradient(to right, #bcfb69, #26bbac);
-  padding: 0.5rem 0 0 0;
+  padding: 0.35rem 0 0 0;
   border-radius: 1.25rem;
   overflow: hidden;
+  position: relative;
+}
+.common-benefits-card-bg::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to right, #bcfb69, #26bbac);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 .suites-card-bg {
   background: linear-gradient(to right, #bcfb69, #26bbac);
@@ -72,7 +83,21 @@
   overflow: hidden;
   padding: 0.2rem;
 }
-
+.suites-card-bg .sc-head > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: top;
+  z-index: 10;
+}
+.suites-card-bg .sc-head h3,
+.suites-card-bg .sc-head span {
+  position: relative;
+  z-index: 20;
+}
 .suites-card {
   width: 100%;
   height: 100%;
