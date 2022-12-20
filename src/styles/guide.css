@@ -4,15 +4,18 @@
   min-height: calc(100vh - 7rem);
   padding: 0 0 15rem 0;
   position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
-.guide-section > img {
-  width: 50%;
+.guide-bg {
+  width: 150%;
   object-fit: contain;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
+  opacity: 0.75;
 }
 .guide-content {
   width: 100%;
@@ -22,6 +25,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 15rem;
+  position: relative;
 }
 .guide-heading {
   position: relative;
@@ -50,8 +54,8 @@
   transform: translate(-50%, -20%) scale(1.075);
   white-space: nowrap;
 }
-.guide-content img {
-  height: 1px;
+.guide-content > img {
+  height: 1.35px;
   object-fit: contain;
   width: max-content;
 }
@@ -60,7 +64,7 @@
   .guide-heading span {
     font-size: 5rem;
   }
-  .guide-content img {
+  .guide-content > img {
     height: 0.75px;
   }
   .guide-section > img {
@@ -78,7 +82,7 @@
   .guide-heading span {
     transform: translate(-50%, -17%) scale(1.075);
   }
-  .guide-content img {
+  .guide-content > img {
     height: max-content;
     width: 100%;
   }

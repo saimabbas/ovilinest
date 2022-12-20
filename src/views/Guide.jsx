@@ -63,51 +63,59 @@ const Guide = () => {
       <main className="guide-page">
         <header>
           {isMobHeaderShowing ? (
-            <div className="header-mob">
-              <div className="header-mob-head">
-                <div className="home-box">
-                  <div className="hmh-content">
-                    <div
-                      onClick={() => {
-                        setIsMobHeaderShowing(false);
-                      }}
-                      className="header-mob-menu-icon"
-                    >
-                      <MdClose />
+            <div className="header-mob-box">
+              <div
+                onClick={() => {
+                  setIsMobHeaderShowing(false);
+                }}
+                className="header-bg-close"
+              ></div>
+              <div className="header-mob">
+                <div className="header-mob-head">
+                  <div className="home-box">
+                    <div className="hmh-content">
+                      <div
+                        onClick={() => {
+                          setIsMobHeaderShowing(false);
+                        }}
+                        className="header-mob-menu-icon"
+                      >
+                        <MdClose />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="header-mob-body">
-                <div className="home-box">
-                  <div className="hmb-content">
-                    <Link to="/world">WORLD</Link>
-                    <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">Utility</Link>
-                    <Link to="/nest">NEST</Link>
-                    <Link to="/guide">
-                      <span>GUIDE</span>
-                    </Link>
-                    <Link to="/faq">FAQ</Link>
-                    <Dropdown>
-                      <Dropdown.Toggle>
-                        Link <MdKeyboardArrowDown />{" "}
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item
-                          href="https://www.yongpyong.co.kr/"
-                          target={"_blank"}
-                        >
-                          YongPyong
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
-                          target={"_blank"}
-                        >
-                          YouTube
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                <div className="header-mob-body">
+                  <div className="home-box">
+                    <div className="hmb-content">
+                      <Link to="/world">WORLD</Link>
+                      <Link to="/journeymap">JOURNEY MAP</Link>
+                      <Link to="/utility">Utility</Link>
+                      <Link to="/nest">NEST</Link>
+                      <Link to="/guide">
+                        <span>GUIDE</span>
+                      </Link>
+                      <Link to="/faq">FAQ</Link>
+                      <Dropdown>
+                        <Dropdown.Toggle>
+                          Link <MdKeyboardArrowDown />{" "}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item
+                            href="https://www.yongpyong.co.kr/"
+                            target={"_blank"}
+                          >
+                            YongPyong
+                          </Dropdown.Item>
+                          <Dropdown.Item
+                            href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                            target={"_blank"}
+                          >
+                            YouTube
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -163,10 +171,10 @@ const Guide = () => {
           </div>
         </header>
         <section className="guide-section">
-          <img src={GuideBgImg} alt="" />
           <div className="home-box">
             <div className="guide-content">
               <div className="guide-heading">
+                <img className="guide-bg" src={GuideBgImg} alt="" />
                 <h1>COMING SOON</h1>
                 <span>COMING SOON</span>
               </div>

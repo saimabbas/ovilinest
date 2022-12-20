@@ -77,51 +77,59 @@ const Nest = () => {
       <main className="nest-page">
         <header>
           {isMobHeaderShowing ? (
-            <div className="header-mob">
-              <div className="header-mob-head">
-                <div className="home-box">
-                  <div className="hmh-content">
-                    <div
-                      onClick={() => {
-                        setIsMobHeaderShowing(false);
-                      }}
-                      className="header-mob-menu-icon"
-                    >
-                      <MdClose />
+            <div className="header-mob-box">
+              <div
+                onClick={() => {
+                  setIsMobHeaderShowing(false);
+                }}
+                className="header-bg-close"
+              ></div>
+              <div className="header-mob">
+                <div className="header-mob-head">
+                  <div className="home-box">
+                    <div className="hmh-content">
+                      <div
+                        onClick={() => {
+                          setIsMobHeaderShowing(false);
+                        }}
+                        className="header-mob-menu-icon"
+                      >
+                        <MdClose />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="header-mob-body">
-                <div className="home-box">
-                  <div className="hmb-content">
-                    <Link to="/world">WORLD</Link>
-                    <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">Utility</Link>
-                    <Link to="/nest">
-                      <span>NEST</span>
-                    </Link>
-                    <Link to="/guide">GUIDE</Link>
-                    <Link to="/faq">FAQ</Link>
-                    <Dropdown>
-                      <Dropdown.Toggle>
-                        Link <MdKeyboardArrowDown />{" "}
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item
-                          href="https://www.yongpyong.co.kr/"
-                          target={"_blank"}
-                        >
-                          YongPyong
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
-                          target={"_blank"}
-                        >
-                          YouTube
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                <div className="header-mob-body">
+                  <div className="home-box">
+                    <div className="hmb-content">
+                      <Link to="/world">WORLD</Link>
+                      <Link to="/journeymap">JOURNEY MAP</Link>
+                      <Link to="/utility">Utility</Link>
+                      <Link to="/nest">
+                        <span>NEST</span>
+                      </Link>
+                      <Link to="/guide">GUIDE</Link>
+                      <Link to="/faq">FAQ</Link>
+                      <Dropdown>
+                        <Dropdown.Toggle>
+                          Link <MdKeyboardArrowDown />{" "}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item
+                            href="https://www.yongpyong.co.kr/"
+                            target={"_blank"}
+                          >
+                            YongPyong
+                          </Dropdown.Item>
+                          <Dropdown.Item
+                            href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                            target={"_blank"}
+                          >
+                            YouTube
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </div>
                   </div>
                 </div>
               </div>

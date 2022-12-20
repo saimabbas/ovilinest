@@ -9,6 +9,7 @@ import "../styles/faq.css";
 // Images & Videos
 import Logo1 from "../assets/img/logo-1.png";
 import FaqBgImg from "../assets/img/faq-bg.png";
+import FAQArrowImg from "../assets/img/faq-arrow.png";
 
 // Components
 
@@ -62,51 +63,59 @@ const Faq = () => {
       <main className="faq-page">
         <header>
           {isMobHeaderShowing ? (
-            <div className="header-mob">
-              <div className="header-mob-head">
-                <div className="home-box">
-                  <div className="hmh-content">
-                    <div
-                      onClick={() => {
-                        setIsMobHeaderShowing(false);
-                      }}
-                      className="header-mob-menu-icon"
-                    >
-                      <MdClose />
+            <div className="header-mob-box">
+              <div
+                onClick={() => {
+                  setIsMobHeaderShowing(false);
+                }}
+                className="header-bg-close"
+              ></div>
+              <div className="header-mob">
+                <div className="header-mob-head">
+                  <div className="home-box">
+                    <div className="hmh-content">
+                      <div
+                        onClick={() => {
+                          setIsMobHeaderShowing(false);
+                        }}
+                        className="header-mob-menu-icon"
+                      >
+                        <MdClose />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="header-mob-body">
-                <div className="home-box">
-                  <div className="hmb-content">
-                    <Link to="/world">WORLD</Link>
-                    <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">Utility</Link>
-                    <Link to="/nest">NEST</Link>
-                    <Link to="/guide">GUIDE</Link>
-                    <Link to="/faq">
-                      <span>FAQ</span>
-                    </Link>
-                    <Dropdown>
-                      <Dropdown.Toggle>
-                        Link <MdKeyboardArrowDown />{" "}
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item
-                          href="https://www.yongpyong.co.kr/"
-                          target={"_blank"}
-                        >
-                          YongPyong
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
-                          target={"_blank"}
-                        >
-                          YouTube
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                <div className="header-mob-body">
+                  <div className="home-box">
+                    <div className="hmb-content">
+                      <Link to="/world">WORLD</Link>
+                      <Link to="/journeymap">JOURNEY MAP</Link>
+                      <Link to="/utility">Utility</Link>
+                      <Link to="/nest">NEST</Link>
+                      <Link to="/guide">GUIDE</Link>
+                      <Link to="/faq">
+                        <span>FAQ</span>
+                      </Link>
+                      <Dropdown>
+                        <Dropdown.Toggle>
+                          Link <MdKeyboardArrowDown />{" "}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item
+                            href="https://www.yongpyong.co.kr/"
+                            target={"_blank"}
+                          >
+                            YongPyong
+                          </Dropdown.Item>
+                          <Dropdown.Item
+                            href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                            target={"_blank"}
+                          >
+                            YouTube
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -175,12 +184,12 @@ const Faq = () => {
                 <p>무엇이든 물어보세요</p>
               </div>
               <div className="faq-container">
-                <Accordion defaultActiveKey="0">
+                <Accordion>
                   <div className="acc-item-border-box">
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>
                         <h5>오빌리 NFT는 어떤 블록체인을 이용하나요?</h5>
-                        <MdExpandMore />
+                        <img src={FAQArrowImg} alt="FAQArrowImg" />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
@@ -195,7 +204,7 @@ const Faq = () => {
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>
                         <h5> 민팅 시 어떤 지갑을 이용하나요?</h5>
-                        <MdExpandMore />
+                        <img src={FAQArrowImg} alt="FAQArrowImg" />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
@@ -209,7 +218,7 @@ const Faq = () => {
                     <Accordion.Item eventKey="2">
                       <Accordion.Header>
                         <h5>2차 판매 로열티가 있나요?</h5>
-                        <MdExpandMore />
+                        <img src={FAQArrowImg} alt="FAQArrowImg" />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>2차 판매 로열티는 7.5% 입니다.</p>
@@ -220,7 +229,7 @@ const Faq = () => {
                     <Accordion.Item eventKey="3">
                       <Accordion.Header>
                         <h5>저작권을 활용할 수 있나요?</h5>
-                        <MdExpandMore />
+                        <img src={FAQArrowImg} alt="FAQArrowImg" />
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>

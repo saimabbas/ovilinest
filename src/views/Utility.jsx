@@ -79,51 +79,59 @@ const Utility = () => {
       <main className="utility-page">
         <header>
           {isMobHeaderShowing ? (
-            <div className="header-mob">
-              <div className="header-mob-head">
-                <div className="home-box">
-                  <div className="hmh-content">
-                    <div
-                      onClick={() => {
-                        setIsMobHeaderShowing(false);
-                      }}
-                      className="header-mob-menu-icon"
-                    >
-                      <MdClose />
+            <div className="header-mob-box">
+              <div
+                onClick={() => {
+                  setIsMobHeaderShowing(false);
+                }}
+                className="header-bg-close"
+              ></div>
+              <div className="header-mob">
+                <div className="header-mob-head">
+                  <div className="home-box">
+                    <div className="hmh-content">
+                      <div
+                        onClick={() => {
+                          setIsMobHeaderShowing(false);
+                        }}
+                        className="header-mob-menu-icon"
+                      >
+                        <MdClose />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="header-mob-body">
-                <div className="home-box">
-                  <div className="hmb-content">
-                    <Link to="/world">WORLD</Link>
-                    <Link to="/journeymap">JOURNEY MAP</Link>
-                    <Link to="/utility">
-                      <span>Utility</span>
-                    </Link>
-                    <Link to="/nest">NEST</Link>
-                    <Link to="/guide">GUIDE</Link>
-                    <Link to="/faq">FAQ</Link>
-                    <Dropdown>
-                      <Dropdown.Toggle>
-                        Link <MdKeyboardArrowDown />{" "}
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Dropdown.Item
-                          href="https://www.yongpyong.co.kr/"
-                          target={"_blank"}
-                        >
-                          YongPyong
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
-                          target={"_blank"}
-                        >
-                          YouTube
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
+                <div className="header-mob-body">
+                  <div className="home-box">
+                    <div className="hmb-content">
+                      <Link to="/world">WORLD</Link>
+                      <Link to="/journeymap">JOURNEY MAP</Link>
+                      <Link to="/utility">
+                        <span>Utility</span>
+                      </Link>
+                      <Link to="/nest">NEST</Link>
+                      <Link to="/guide">GUIDE</Link>
+                      <Link to="/faq">FAQ</Link>
+                      <Dropdown>
+                        <Dropdown.Toggle>
+                          Link <MdKeyboardArrowDown />{" "}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item
+                            href="https://www.yongpyong.co.kr/"
+                            target={"_blank"}
+                          >
+                            YongPyong
+                          </Dropdown.Item>
+                          <Dropdown.Item
+                            href="https://www.youtube.com/@user-vr9uv2nn5b/featured"
+                            target={"_blank"}
+                          >
+                            YouTube
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -225,7 +233,9 @@ const Utility = () => {
                     <div className="sc-head">
                       <img src={SuiteBGImg} alt="" />
                       <h3>Royal Suite</h3>
-                      <span>수량 30개 (0.3%)</span>
+                      <div className="sc-head-span">
+                        <span>수량 30개 (0.3%)</span>
+                      </div>
                     </div>
                     <div className="sc-body">
                       <div className="scb-card">
@@ -272,7 +282,9 @@ const Utility = () => {
                     <div className="sc-head">
                       <img src={SuiteBGImg} alt="" />
                       <h3>Presidential Suite</h3>
-                      <span>수량 30개 (0.3%)</span>
+                      <div className="sc-head-span">
+                        <span>수량 30개 (0.3%)</span>
+                      </div>
                     </div>
                     <div className="sc-body">
                       <div className="scb-card">
@@ -331,7 +343,9 @@ const Utility = () => {
                           <h3>Executive</h3>
                           <span>Executive</span>
                         </div>
-                        <span>수량 550개 (5.5%)</span>
+                        <div className="sc-head-span">
+                          <span>수량 550개 (5.5%)</span>
+                        </div>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
@@ -380,7 +394,9 @@ const Utility = () => {
                           <h3>Deluxe</h3>
                           <span>Deluxe</span>
                         </div>
-                        <span>수량 3,800개 (38%)</span>
+                        <div className="sc-head-span">
+                          <span>수량 3,800개 (38%)</span>
+                        </div>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
@@ -429,7 +445,9 @@ const Utility = () => {
                           <h3>Superior</h3>
                           <span>Superior</span>
                         </div>
-                        <span>수량 5,590개 (55.9%)</span>
+                        <div className="sc-head-span">
+                          <span>수량 5,590개 (55.9%)</span>
+                        </div>
                       </div>
                       <div className="sc-body">
                         <div className="scb-card">
