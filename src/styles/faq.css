@@ -3,6 +3,7 @@
   background-color: var(--black);
   min-height: calc(100vh - 7rem);
   padding: 0 0 15rem 0;
+  overflow-x: hidden;
   position: relative;
 }
 .faq-section > img {
@@ -72,6 +73,7 @@
 }
 .faq-container .accordion-button img {
   width: 2.5rem;
+  transform: rotate(-180deg);
   object-fit: contain;
 }
 .faq-container .accordion-body p {
@@ -86,15 +88,31 @@
   -webkit-text-fill-color: transparent;
 }
 .faq-container .accordion-button:not(.collapsed) img {
-  transform: rotate(-180deg);
+  transform: rotate(0);
 }
 .faq-content {
   width: 100%;
+}
+@media screen and (max-width: 875px) {
+  .faq-section > img {
+    object-position: bottom left;
+    height: 50rem;
+    object-fit: cover;
+    right: unset;
+    left: 0rem;
+  }
+  .faq-section {
+    padding: 0 0 10rem 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .acc-item-border-box .accordion-item {
     width: 100%;
     background-color: var(--black);
     padding: 1.5rem;
+  }
+  .faq-section > img {
+    height: 20rem;
+    opacity: 1;
   }
 }

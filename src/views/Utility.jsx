@@ -12,6 +12,7 @@ import Logo1 from "../assets/img/logo-1.png";
 import CBImg1 from "../assets/img/common-benefits-img-1.png";
 import CBImg2 from "../assets/img/common-benefits-img-2.png";
 import SuiteBGImg from "../assets/img/utility-suite-bg.png";
+import SuiteBGImg2 from "../assets/img/utility-suite-bg-2.png";
 
 // Components
 
@@ -208,8 +209,11 @@ const Utility = () => {
                       <p>공통혜택 1</p>
                       <h6>네스트 예약</h6>
                       <p>
-                        ※ 네스트란?NFT 홀더들에게 제공되는 별도의 프라이빗한
-                        전용객실로 NFT 홀더들이 우선 예약할 수 있습니다.
+                        ※ 네스트란?
+                        <br />
+                        NFT 홀더들에게 제공되는 별도의 프라이빗한 전용객실로{" "}
+                        <br />
+                        NFT 홀더들이 우선 예약할 수 있습니다.
                       </p>
                     </div>
                   </div>
@@ -280,7 +284,7 @@ const Utility = () => {
                 <div className="suites-card-bg utility-card-anim">
                   <div className="suites-card">
                     <div className="sc-head">
-                      <img src={SuiteBGImg} alt="" />
+                      <img src={SuiteBGImg2} alt="" />
                       <h3>Presidential Suite</h3>
                       <div className="sc-head-span">
                         <span>수량 30개 (0.3%)</span>

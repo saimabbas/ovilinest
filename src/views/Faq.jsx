@@ -96,7 +96,7 @@ const Faq = () => {
                       <Link to="/faq">
                         <span>FAQ</span>
                       </Link>
-                      <Dropdown>
+                      <Dropdown variant="danger">
                         <Dropdown.Toggle>
                           Link <MdKeyboardArrowDown />{" "}
                         </Dropdown.Toggle>
@@ -139,7 +139,7 @@ const Faq = () => {
                 </Link>
               </div>
               <div className="header-right">
-                <Dropdown>
+                <Dropdown variant="danger">
                   <Dropdown.Toggle>
                     Link <MdKeyboardArrowDown />{" "}
                   </Dropdown.Toggle>

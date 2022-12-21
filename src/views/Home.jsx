@@ -133,7 +133,6 @@ const Home = () => {
         duration: 10,
       }
     );
-
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
@@ -237,6 +236,22 @@ const Home = () => {
       $("header, .hero-section-bg, .hero-section .hero-content-box").css({
         opacity: "1",
       });
+    });
+    let homeLandingAnim = gsap.timeline({
+      paused: true,
+    });
+    homeLandingAnim.fromTo(
+      ".home-page",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.075,
+      }
+    );
+    $(window).on("load", function () {
+      homeLandingAnim.play(0);
     });
   }, []);
   return (

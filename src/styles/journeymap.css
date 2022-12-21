@@ -41,8 +41,8 @@
   font-size: 4.5rem;
 }
 .mapcard-left p {
-  font-size: 1.25rem;
-  line-height: 1.65rem;
+  font-size: 2rem;
+  line-height: 2.15rem;
   color: var(--white);
   margin: 0;
 }
@@ -69,7 +69,7 @@
 }
 .mcr-box span {
   font-size: 1.15rem;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 1000px;
   background-color: #26bbac;
   color: var(--white);
@@ -94,6 +94,12 @@
   font-weight: 700 !important;
 }
 @media screen and (max-width: 600px) {
+  .mapcard-left p {
+    font-size: 1.65rem;
+    line-height: 1.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
   .map-card {
     grid-template-columns: 1fr;
     margin: 0 0 3.5rem 0;
@@ -107,5 +113,11 @@
   }
   .map-grid {
     padding: 0;
+  }
+  .mapcard-left p {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    color: var(--white);
+    margin: 0;
   }
 }

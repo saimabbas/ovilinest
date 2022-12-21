@@ -52,7 +52,8 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /* English Text */
-
+.mapcard-left h5 span,
+.mapcard-left h5,
 .nest-bottom p,
 .mcr-box span,
 .footer-content > p {
@@ -176,12 +177,40 @@ header .dropdown button {
   justify-content: center;
   box-shadow: unset !important;
 }
-header .dropdown button:hover,
 header .dropdown button:active,
+header .dropdown button:hover,
 header .dropdown button:focus-visible,
-header .dropdown button:focus {
+header .dropdown button:focus-within,
+header .dropdown button:visited,
+header .dropdown button:target,
+header .dropdown button:focus,
+header .dropdown button.btn.show:active,
+header .dropdown button.btn.show:hover,
+header .dropdown button.btn.show:focus-visible,
+header .dropdown button.btn.show:focus-within,
+header .dropdown button.btn.show:visited,
+header .dropdown button.btn.show:target,
+header .dropdown button.btn.show:focus {
   background-color: #1d1b1f !important;
   box-shadow: unset !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+header .dropdown button.btn-primary {
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: #1d1b1f !important;
+  --bs-btn-border-color: #1d1b1f !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: #1d1b1f !important;
+  --bs-btn-hover-border-color: #1d1b1f !important;
+  --bs-btn-focus-shadow-rgb: 0, 0, 0 !important;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-active-bg: #1d1b1f !important;
+  --bs-btn-active-border-color: #1d1b1f !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  --bs-btn-disabled-color: #fff !important;
+  --bs-btn-disabled-bg: #1d1b1f !important;
+  --bs-btn-disabled-border-color: #1d1b1f !important;
 }
 header .dropdown button::after {
   display: none;
