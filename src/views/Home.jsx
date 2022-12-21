@@ -57,11 +57,11 @@ const Home = () => {
       ".o",
       {
         backgroundPosition: "0% 0%",
-        backgroundSize: "200%",
+        // backgroundSize: "200%",
       },
       {
         backgroundPosition: "100% 100%",
-        backgroundSize: "300%",
+        // backgroundSize: "300%",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
@@ -72,11 +72,11 @@ const Home = () => {
       ".v",
       {
         backgroundPosition: "50% 50%",
-        backgroundSize: "300%",
+        // backgroundSize: "300%",
       },
       {
         backgroundPosition: "0% 0%",
-        backgroundSize: "400%",
+        // backgroundSize: "400%",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
@@ -87,11 +87,11 @@ const Home = () => {
       ".i1",
       {
         backgroundPosition: "0% 0%",
-        backgroundSize: "200%",
+        // backgroundSize: "200%",
       },
       {
         backgroundPosition: "50% 100%",
-        backgroundSize: "400%",
+        // backgroundSize: "400%",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
@@ -102,11 +102,11 @@ const Home = () => {
       ".l",
       {
         backgroundPosition: "0% 0%",
-        backgroundSize: "400%",
+        // backgroundSize: "400%",
       },
       {
         backgroundPosition: "100% 100%",
-        backgroundSize: "250%",
+        // backgroundSize: "250%",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
@@ -117,11 +117,11 @@ const Home = () => {
       ".i2",
       {
         backgroundPosition: "0% 0%",
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
       },
       {
         backgroundPosition: "100% 100%",
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
         ease: Power1.easeInOut,
         repeat: -1,
         yoyo: true,
