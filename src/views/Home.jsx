@@ -45,7 +45,7 @@ const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   useEffect(() => {
     // FOR DESKTOPS
-    gsap.fromTo(
+    /* gsap.fromTo(
       ".o",
       {
         backgroundPosition: "0% 0%",
@@ -61,7 +61,7 @@ const Home = () => {
         duration: 20,
       }
     );
-    /* gsap.fromTo(
+    gsap.fromTo(
       ".v",
       {
         backgroundPosition: "50% 50%",
@@ -76,7 +76,7 @@ const Home = () => {
         yoyo: true,
         duration: 15,
       }
-    ); */
+    );  
     gsap.fromTo(
       ".i1",
       {
@@ -136,7 +136,7 @@ const Home = () => {
         yoyo: true,
         duration: 10,
       }
-    );
+    ); */
 
     $(".o").mouseenter(() => {
       $(".o-box").css({

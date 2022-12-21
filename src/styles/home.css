@@ -121,6 +121,8 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-font-smoothing: antialiased;
+}
+.hero-head h1 span {
   background-repeat: no-repeat;
   animation-name: backgroundEffect;
   animation-duration: 50s;
