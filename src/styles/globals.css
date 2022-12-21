@@ -105,9 +105,16 @@ body {
     display: flex;
   }
 }
-/* body {
-  transition: 0.5s;
-} */
+
+body:after {
+  display: none;
+  content: url("../assets/img/video1.jpg") url("../assets/img/video2.jpg")
+    url("../assets/img/video3.jpg") url("../assets/img/video4.jpg")
+    url("../assets/img/video5.jpg") url("../assets/img/video6.jpg");
+}
+#preload-div {
+  display: none;
+}
 body::-webkit-scrollbar {
   width: 10px;
 }

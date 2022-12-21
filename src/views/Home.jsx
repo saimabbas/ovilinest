@@ -21,6 +21,12 @@ import I1video from "../assets/videos/i12.mp4";
 import Lvideo from "../assets/videos/l2.mp4";
 import I2video from "../assets/videos/i22.mp4";
 import NESTvideo from "../assets/videos/nest2.mp4";
+import Video1Img from "../assets/img/video1.jpg";
+import Video2Img from "../assets/img/video2.jpg";
+import Video3Img from "../assets/img/video3.jpg";
+import Video4Img from "../assets/img/video4.jpg";
+import Video5Img from "../assets/img/video5.jpg";
+import Video6Img from "../assets/img/video6.jpg";
 
 // Components
 
@@ -239,7 +245,7 @@ const Home = () => {
         opacity: "1",
       });
     });
-    let homeLandingAnim = gsap.timeline({
+    /* let homeLandingAnim = gsap.timeline({
       paused: true,
     });
     homeLandingAnim.fromTo(
@@ -251,13 +257,25 @@ const Home = () => {
         scale: "1",
         duration: 1,
       }
-    );
-    $(window).on("load", function () {
+    ); */
+    /* $(window).on("load", function () {
       homeLandingAnim.play();
-    });
+    }); */
+    /* $(document).ready(function () {
+      homeLandingAnim.play();
+    }); */
   }, []);
+
   return (
     <div className="app">
+      <div id="preload-div">
+        <link rel="preload" href={Video1Img} as="image" />
+        <link rel="preload" href={Video2Img} as="image" />
+        <link rel="preload" href={Video3Img} as="image" />
+        <link rel="preload" href={Video4Img} as="image" />
+        <link rel="preload" href={Video5Img} as="image" />
+        <link rel="preload" href={Video6Img} as="image" />
+      </div>
       <div className="rotate-screen">
         <img src={RotationImgBG} alt="" />
         <p>화면을 돌려주세요.</p>
