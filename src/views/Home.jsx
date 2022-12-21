@@ -245,14 +245,15 @@ const Home = () => {
     homeLandingAnim.fromTo(
       ".home-page",
       {
-        x: "'100%",
+        opacity: "0",
       },
       {
-        x: "0",
+        opacity: "1",
+        duration: 1,
       }
     );
     $(window).on("load", function () {
-      homeLandingAnim.play(0);
+      homeLandingAnim.play();
     });
   }, []);
   return (
