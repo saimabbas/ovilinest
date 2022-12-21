@@ -52,7 +52,7 @@ const Home = () => {
       {
         backgroundPosition: "0% 0%",
         backgroundSize: "200%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundPosition: "100% 100%",
@@ -62,7 +62,8 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 20,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
     gsap.fromTo(
@@ -70,7 +71,7 @@ const Home = () => {
       {
         backgroundPosition: "50% 50%",
         backgroundSize: "300%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundPosition: "0% 0%",
@@ -80,7 +81,8 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 15,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
     gsap.fromTo(
@@ -88,7 +90,7 @@ const Home = () => {
       {
         backgroundPosition: "0% 0%",
         backgroundSize: "200%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundPosition: "50% 100%",
@@ -98,7 +100,8 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 15,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
     gsap.fromTo(
@@ -106,7 +109,7 @@ const Home = () => {
       {
         backgroundPosition: "0% 0%",
         backgroundSize: "400%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundPosition: "100% 100%",
@@ -116,14 +119,15 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 20,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
     gsap.fromTo(
       ".i2",
       {
         backgroundPosition: "0% 0%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundPosition: "100% 100%",
@@ -132,14 +136,15 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 10,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
     gsap.fromTo(
       ".nest",
       {
         backgroundSize: "100%",
-        rotation: 0.01,
+        rotationZ: 0.01,
       },
       {
         backgroundSize: "150%",
@@ -148,7 +153,8 @@ const Home = () => {
         repeat: -1,
         yoyo: true,
         duration: 10,
-        rotation: 0.01,
+        rotationZ: 0.01,
+        force3D: true,
       }
     );
 
