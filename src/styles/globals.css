@@ -88,12 +88,13 @@ body {
   object-fit: contain;
 }
 .rotate-screen img:nth-child(1) {
-  width: 100%;
+  width: 80%;
   object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
+  opacity: 0.75;
 }
 @media screen and (min-width: 300px) and (max-width: 875px) and (orientation: landscape) {
   .rotate-screen {
