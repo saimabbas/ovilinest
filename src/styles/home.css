@@ -6,6 +6,7 @@
 }
 .home-page {
   width: 100%;
+  transform: scale(0);
 }
 .hero-section {
   width: 100%;
