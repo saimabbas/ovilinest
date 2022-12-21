@@ -121,27 +121,31 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-font-smoothing: antialiased;
-  background-size: auto;
   background-repeat: no-repeat;
   animation-name: backgroundEffect;
-  animation-duration: 15s;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
 }
 @keyframes backgroundEffect {
   0% {
     background-position: 0% 0%;
+    background-size: 300%;
   }
   25% {
     background-position: 30% 10%;
+    background-size: 350%;
   }
   50% {
     background-position: 0 30%;
+    background-size: 400%;
   }
   75% {
     background-position: 30% 30%;
+    background-size: 350%;
   }
   100% {
     background-position: 0% 0%;
+    background-size: 300%;
   }
 }
 .i1 {
