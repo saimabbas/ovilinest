@@ -10,6 +10,8 @@ import "../styles/faq.css";
 import Logo1 from "../assets/img/logo-1.png";
 import FaqBgImg from "../assets/img/faq-bg.png";
 import FAQArrowImg from "../assets/img/faq-arrow.png";
+import RotationImg from "../assets/img/rotation.gif";
+import RotationImgBG from "../assets/img/nest-shape-1.png";
 
 // Components
 
@@ -56,9 +58,9 @@ const Faq = () => {
   return (
     <div className="app">
       <div className="rotate-screen">
-        <p>
-          화면을 돌려주세요. <MdOutlineRotate90DegreesCcw />{" "}
-        </p>
+        <img src={RotationImgBG} alt="" />
+        <p>화면을 돌려주세요.</p>
+        <img src={RotationImg} alt="RotationImg" />
       </div>
       <main className="faq-page">
         <header>
