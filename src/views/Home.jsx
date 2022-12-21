@@ -44,98 +44,202 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   useEffect(() => {
-    gsap.fromTo(
-      ".o",
-      {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "200%",
-      },
-      {
-        backgroundPosition: "100% 100%",
-        backgroundSize: "300%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 20,
+    function myFunction(x) {
+      if (x.matches) {
+        // FOR MOBILES
+        gsap.fromTo(
+          ".o",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "200%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            backgroundSize: "300%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+        gsap.fromTo(
+          ".v",
+          {
+            backgroundPosition: "50% 50%",
+            backgroundSize: "300%",
+          },
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+        gsap.fromTo(
+          ".i1",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "200%",
+          },
+          {
+            backgroundPosition: "50% 100%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+        gsap.fromTo(
+          ".l",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "400%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            backgroundSize: "250%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+        gsap.fromTo(
+          ".i2",
+          {
+            backgroundPosition: "0% 0%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+        gsap.fromTo(
+          ".nest",
+          {
+            backgroundSize: "100%",
+          },
+          {
+            backgroundSize: "150%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 5,
+          }
+        );
+      } else {
+        // FOR DESKTOPS
+        gsap.fromTo(
+          ".o",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "200%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            backgroundSize: "300%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 20,
+          }
+        );
+        gsap.fromTo(
+          ".v",
+          {
+            backgroundPosition: "50% 50%",
+            backgroundSize: "300%",
+          },
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 15,
+          }
+        );
+        gsap.fromTo(
+          ".i1",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "200%",
+          },
+          {
+            backgroundPosition: "50% 100%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 15,
+          }
+        );
+        gsap.fromTo(
+          ".l",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "400%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            backgroundSize: "250%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 20,
+          }
+        );
+        gsap.fromTo(
+          ".i2",
+          {
+            backgroundPosition: "0% 0%",
+          },
+          {
+            backgroundPosition: "100% 100%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 10,
+          }
+        );
+        gsap.fromTo(
+          ".nest",
+          {
+            backgroundSize: "100%",
+          },
+          {
+            backgroundSize: "150%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 10,
+          }
+        );
       }
-    );
-    gsap.fromTo(
-      ".v",
-      {
-        backgroundPosition: "50% 50%",
-        backgroundSize: "300%",
-      },
-      {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "400%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 15,
-      }
-    );
-    gsap.fromTo(
-      ".i1",
-      {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "200%",
-      },
-      {
-        backgroundPosition: "50% 100%",
-        backgroundSize: "400%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 15,
-      }
-    );
-    gsap.fromTo(
-      ".l",
-      {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "400%",
-      },
-      {
-        backgroundPosition: "100% 100%",
-        backgroundSize: "250%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 20,
-      }
-    );
-    gsap.fromTo(
-      ".i2",
-      {
-        backgroundPosition: "0% 0%",
-      },
-      {
-        backgroundPosition: "100% 100%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 10,
-      }
-    );
-    gsap.fromTo(
-      ".nest",
-      {
-        backgroundSize: "100%",
-      },
-      {
-        backgroundSize: "150%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 10,
-      }
-    );
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+
     $(".o").mouseenter(() => {
       $(".o-box").css({
         opacity: "1",
