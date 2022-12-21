@@ -123,32 +123,8 @@
   -webkit-font-smoothing: antialiased;
 }
 .hero-head h1 span {
-  background-repeat: no-repeat;
-  animation-name: backgroundEffect;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-}
-@keyframes backgroundEffect {
-  0% {
-    background-position: 0% 0%;
-    background-size: 300%;
-  }
-  25% {
-    background-position: 30% 10%;
-    background-size: 350%;
-  }
-  50% {
-    background-position: 0 30%;
-    background-size: 400%;
-  }
-  75% {
-    background-position: 30% 30%;
-    background-size: 350%;
-  }
-  100% {
-    background-position: 0% 0%;
-    background-size: 300%;
-  }
+  -webkit-backface-visibility: hidden; /* add to fix webkit bug jitter */
+  -webkit-transform: perspective(1000px); /* add to fix webkit bug jitter */
 }
 .i1 {
   background-image: url("./../assets/img/video3.jpg");
