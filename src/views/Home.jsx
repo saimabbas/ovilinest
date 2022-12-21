@@ -31,16 +31,7 @@ import Video6Img from "../assets/img/video6.jpg";
 // Components
 
 import gsap from "gsap";
-import {
-  Back,
-  Power3,
-  Linear,
-  easeNone,
-  Power4,
-  Linear,
-  Expo,
-  Circ,
-} from "gsap/dist/gsap";
+import { Back, Power3, Linear, Power4, Expo, Circ } from "gsap/dist/gsap";
 import $ from "jquery";
 import { Dropdown } from "react-bootstrap";
 import {
