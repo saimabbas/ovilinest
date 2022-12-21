@@ -94,6 +94,9 @@
 .complete + p {
   font-weight: 700 !important;
 }
+.mcr-box p i {
+  font-style: normal;
+}
 @media screen and (max-width: 600px) {
   .map-card {
     grid-template-columns: 1fr;

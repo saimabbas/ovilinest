@@ -352,7 +352,9 @@ const JourneyMap = () => {
                     <div className="mapcard-right">
                       <div className="mcr-box">
                         <span>UPCOMING</span>
-                        <p>새로운 Journey Map 공개</p>
+                        <p>
+                          새로운 <i>Journey Map</i> 공개
+                        </p>
                       </div>
                     </div>
                   </div>
