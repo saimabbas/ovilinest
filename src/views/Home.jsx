@@ -245,11 +245,10 @@ const Home = () => {
     homeLandingAnim.fromTo(
       ".home-page",
       {
-        visibility: "hidden",
+        opacity: "0",
       },
       {
-        visibility: "visible",
-        duration: 0.075,
+        opacity: "1",
       }
     );
     $(window).on("load", function () {
@@ -266,7 +265,6 @@ const Home = () => {
       <main className="home-page">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
-
           <video muted autoPlay loop playsInline>
             <source src={Ovideo} type="video/mp4" />
           </video>
