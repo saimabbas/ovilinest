@@ -125,6 +125,7 @@
 .hero-head h1 span {
   -webkit-backface-visibility: hidden; /* add to fix webkit bug jitter */
   -webkit-transform: perspective(1000px); /* add to fix webkit bug jitter */
+  will-change: transform;
 }
 .i1 {
   background-image: url("./../assets/img/video3.jpg");

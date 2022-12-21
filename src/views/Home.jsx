@@ -41,8 +41,10 @@ import {
   MdOutlineRotate90DegreesCcw,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { CSSPlugin } from "gsap/CSSPlugin";
 const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
+  CSSPlugin.defaultForce3D = false;
   useEffect(() => {
     // FOR DESKTOPS
     gsap.fromTo(
