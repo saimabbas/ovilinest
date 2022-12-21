@@ -48,11 +48,11 @@ const Home = () => {
       ".o",
       {
         backgroundPosition: "0% 0%",
-        // backgroundSize: "200%",
+        backgroundSize: "200%",
       },
       {
         backgroundPosition: "100% 100%",
-        // backgroundSize: "300%",
+        backgroundSize: "300%",
         ease: Linear.easeNone,
         autoRound: false,
         repeat: -1,
@@ -64,11 +64,11 @@ const Home = () => {
       ".v",
       {
         backgroundPosition: "50% 50%",
-        // backgroundSize: "300%",
+        backgroundSize: "300%",
       },
       {
         backgroundPosition: "0% 0%",
-        // backgroundSize: "400%",
+        backgroundSize: "400%",
         ease: Linear.easeNone,
         autoRound: false,
         repeat: -1,
@@ -80,11 +80,11 @@ const Home = () => {
       ".i1",
       {
         backgroundPosition: "0% 0%",
-        // backgroundSize: "200%",
+        backgroundSize: "200%",
       },
       {
         backgroundPosition: "50% 100%",
-        // backgroundSize: "400%",
+        backgroundSize: "400%",
         ease: Linear.easeNone,
         autoRound: false,
         repeat: -1,
@@ -96,11 +96,11 @@ const Home = () => {
       ".l",
       {
         backgroundPosition: "0% 0%",
-        // backgroundSize: "400%",
+        backgroundSize: "400%",
       },
       {
         backgroundPosition: "100% 100%",
-        // backgroundSize: "250%",
+        backgroundSize: "250%",
         ease: Linear.easeNone,
         autoRound: false,
         repeat: -1,
@@ -112,11 +112,9 @@ const Home = () => {
       ".i2",
       {
         backgroundPosition: "0% 0%",
-        // backgroundSize: "cover",
       },
       {
         backgroundPosition: "100% 100%",
-        // backgroundSize: "cover",
         ease: Linear.easeNone,
         autoRound: false,
         repeat: -1,
