@@ -105,9 +105,9 @@ body {
     display: flex;
   }
 }
-body {
+/* body {
   transition: 0.5s;
-}
+} */
 body::-webkit-scrollbar {
   width: 10px;
 }

@@ -239,22 +239,22 @@ const Home = () => {
         opacity: "1",
       });
     });
-    /* let homeLandingAnim = gsap.timeline({
+    let homeLandingAnim = gsap.timeline({
       paused: true,
     });
     homeLandingAnim.fromTo(
       ".home-page",
       {
-        opacity: 0,
+        visibility: "hidden",
       },
       {
-        opacity: 1,
+        visibility: "visible",
         duration: 0.075,
       }
     );
     $(window).on("load", function () {
       homeLandingAnim.play(0);
-    }); */
+    });
   }, []);
   return (
     <div className="app">
