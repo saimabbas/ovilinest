@@ -275,6 +275,12 @@ const Home = () => {
         <link rel="preload" href={Video4Img} as="image" />
         <link rel="preload" href={Video5Img} as="image" />
         <link rel="preload" href={Video6Img} as="image" />
+        <img src={Video1Img} alt="Video1Img" />
+        <img src={Video2Img} alt="Video1Img" />
+        <img src={Video3Img} alt="Video1Img" />
+        <img src={Video4Img} alt="Video1Img" />
+        <img src={Video5Img} alt="Video1Img" />
+        <img src={Video6Img} alt="Video1Img" />
       </div>
       <div className="rotate-screen">
         <img src={RotationImgBG} alt="" />
