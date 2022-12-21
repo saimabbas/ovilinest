@@ -293,7 +293,7 @@ const JourneyMap = () => {
                 <div className="map-card">
                   <div className="mapcard-left">
                     <h5>
-                      <span>I</span>nvitation<i>(낯선 초대)</i>
+                      <span>I</span>nvitation <i>(낯선 초대)</i>
                     </h5>
                     <p>다른데 가서 놀까?</p>
                     <p>새로운 친구는 어때?</p>
@@ -328,7 +328,7 @@ const JourneyMap = () => {
                 <div className="map-card">
                   <div className="mapcard-left">
                     <h5>
-                      <span>L</span>ove<i>(오빌리의 사랑)</i>
+                      <span>L</span>ove <i>(오빌리의 사랑)</i>
                     </h5>
                     <p>함께할수록 사랑은 커지겠지?</p>
                   </div>
@@ -344,7 +344,7 @@ const JourneyMap = () => {
                 <div className="map-card">
                   <div className="mapcard-left">
                     <h5>
-                      <span>I</span>ntro<i>(더 넓은 세상)</i>
+                      <span>I</span>ntro <i>(더 넓은 세상)</i>
                     </h5>
                     <p>또 다른 세상이 궁금해?</p>
                   </div>

@@ -43,7 +43,6 @@ body {
 .section-heading > p,
 .mapcard-left p,
 .mapcard-left h5 i,
-.mcr-box p,
 .world-text-box p,
 .world-text-box h2 span,
 .hero-content-box p,
@@ -52,6 +51,7 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 /* English Text */
+.mcr-box p,
 .mapcard-left h5 span,
 .mapcard-left h5,
 .nest-bottom p,
