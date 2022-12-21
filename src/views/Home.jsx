@@ -245,10 +245,10 @@ const Home = () => {
     homeLandingAnim.fromTo(
       ".home-page",
       {
-        opacity: "0",
+        scale: "0",
       },
       {
-        opacity: "1",
+        scale: "1",
         duration: 1,
       }
     );
