@@ -7,11 +7,11 @@ import "../styles/home.css";
 import "../styles/faq.css";
 
 // Images & Videos
+import RotationImg from "../assets/img/rotation.gif";
+import RotationImgBG from "../assets/img/nest-shape-1.png";
 import Logo1 from "../assets/img/logo-1.png";
 import FaqBgImg from "../assets/img/faq-bg.png";
 import FAQArrowImg from "../assets/img/faq-arrow.png";
-import RotationImg from "../assets/img/rotation.gif";
-import RotationImgBG from "../assets/img/nest-shape-1.png";
 
 // Components
 

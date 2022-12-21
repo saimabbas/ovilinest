@@ -6,6 +6,8 @@ import "../styles/home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Images & Videos
+import RotationImg from "../assets/img/rotation.gif";
+import RotationImgBG from "../assets/img/nest-shape-1.png";
 import Logo1 from "../assets/img/logo-1.png";
 import MobBgImg1 from "../assets/img/1.webp";
 import MobBgImg2 from "../assets/img/2.webp";
@@ -257,9 +259,9 @@ const Home = () => {
   return (
     <div className="app">
       <div className="rotate-screen">
-        <p>
-          화면을 돌려주세요. <MdOutlineRotate90DegreesCcw />{" "}
-        </p>
+        <img src={RotationImgBG} alt="" />
+        <p>화면을 돌려주세요.</p>
+        <img src={RotationImg} alt="RotationImg" />
       </div>
       <main className="home-page">
         <div className="letter-box o-box">

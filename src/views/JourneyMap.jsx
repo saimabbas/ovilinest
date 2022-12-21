@@ -9,6 +9,8 @@ import "../styles/utility.css";
 import "../styles/journeymap.css";
 
 // Images & Videos
+import RotationImg from "../assets/img/rotation.gif";
+import RotationImgBG from "../assets/img/nest-shape-1.png";
 import Logo1 from "../assets/img/logo-1.png";
 import CBImg1 from "../assets/img/common-benefits-img-1.png";
 import CBImg2 from "../assets/img/common-benefits-img-2.png";
@@ -76,9 +78,9 @@ const JourneyMap = () => {
   return (
     <div className="app">
       <div className="rotate-screen">
-        <p>
-          화면을 돌려주세요. <MdOutlineRotate90DegreesCcw />{" "}
-        </p>
+        <img src={RotationImgBG} alt="" />
+        <p>화면을 돌려주세요.</p>
+        <img src={RotationImg} alt="RotationImg" />
       </div>
       <main className="map-page">
         <header>

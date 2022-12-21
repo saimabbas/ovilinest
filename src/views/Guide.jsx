@@ -7,6 +7,8 @@ import "../styles/home.css";
 import "../styles/guide.css";
 
 // Images & Videos
+import RotationImg from "../assets/img/rotation.gif";
+import RotationImgBG from "../assets/img/nest-shape-1.png";
 import Logo1 from "../assets/img/logo-1.png";
 import GuideBgImg from "../assets/img/guide-bg.png";
 import GuideSwooshImg from "../assets/img/guide-swoosh.png";
@@ -56,9 +58,9 @@ const Guide = () => {
   return (
     <div className="app">
       <div className="rotate-screen">
-        <p>
-          화면을 돌려주세요. <MdOutlineRotate90DegreesCcw />{" "}
-        </p>
+        <img src={RotationImgBG} alt="" />
+        <p>화면을 돌려주세요.</p>
+        <img src={RotationImg} alt="RotationImg" />
       </div>
       <main className="guide-page">
         <header>
