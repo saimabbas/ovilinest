@@ -34,8 +34,8 @@ import gsap from "gsap";
 import {
   Back,
   Power3,
-  Power1,
-  Power2,
+  Linear,
+  easeNone,
   Power4,
   Linear,
   Expo,
@@ -62,7 +62,7 @@ const Home = () => {
       {
         backgroundPosition: "100% 100%",
         // backgroundSize: "300%",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 20,
@@ -77,7 +77,7 @@ const Home = () => {
       {
         backgroundPosition: "0% 0%",
         // backgroundSize: "400%",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 15,
@@ -92,7 +92,7 @@ const Home = () => {
       {
         backgroundPosition: "50% 100%",
         // backgroundSize: "400%",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 15,
@@ -107,7 +107,7 @@ const Home = () => {
       {
         backgroundPosition: "100% 100%",
         // backgroundSize: "250%",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 20,
@@ -122,7 +122,7 @@ const Home = () => {
       {
         backgroundPosition: "100% 100%",
         // backgroundSize: "cover",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 10,
@@ -135,7 +135,7 @@ const Home = () => {
       },
       {
         backgroundSize: "150%",
-        ease: Power1.easeInOut,
+        ease: Linear.easeNone,
         repeat: -1,
         yoyo: true,
         duration: 10,
