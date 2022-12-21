@@ -398,4 +398,23 @@ span.o:hover .o-box.letter-box {
   .hero-section .hero-content-box p:nth-of-type(2) {
     display: block;
   }
+
+  .o {
+    background-image: url("./../assets/img/video12.jpg");
+  }
+  .v {
+    background-image: url("./../assets/img/video22.jpg");
+  }
+  .i1 {
+    background-image: url("./../assets/img/video32.jpg");
+  }
+  .l {
+    background-image: url("./../assets/img/video42.jpg");
+  }
+  .i2 {
+    background-image: url("./../assets/img/video52.jpg");
+  }
+  .nest {
+    background-image: url("./../assets/img/video62.jpg");
+  }
 }
