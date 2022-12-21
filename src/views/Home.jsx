@@ -237,7 +237,7 @@ const Home = () => {
         opacity: "1",
       });
     });
-    let homeLandingAnim = gsap.timeline({
+    /* let homeLandingAnim = gsap.timeline({
       paused: true,
     });
     homeLandingAnim.fromTo(
@@ -252,7 +252,7 @@ const Home = () => {
     );
     $(window).on("load", function () {
       homeLandingAnim.play(0);
-    });
+    }); */
   }, []);
   return (
     <div className="app">
