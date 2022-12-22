@@ -151,7 +151,7 @@ header {
   background-color: var(--black);
   z-index: 1001;
   position: relative;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   border-bottom: 1px solid #484848;
   position: sticky;
   top: 0;
