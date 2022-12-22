@@ -63,7 +63,7 @@ const Home = () => {
             autoRound: false,
             repeat: -1,
             yoyo: true,
-            duration: 15,
+            duration: 10,
             rotationZ: 0.01,
             force3D: true,
           }
