@@ -304,7 +304,7 @@ const Home = () => {
         <p>화면을 돌려주세요.</p>
         <img src={RotationImg} alt="RotationImg" />
       </div>
-      <main className="home-page">
+      <main className="home-page page-container">
         <div className="letter-box o-box">
           <img src={MobBgImg1} alt="MobBgImg" />
           <video muted autoPlay loop playsInline>

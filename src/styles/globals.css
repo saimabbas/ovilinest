@@ -100,12 +100,17 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0.75;
 }
+.page-container {
+  display: block;
+}
 @media screen and (min-width: 300px) and (max-width: 875px) and (orientation: landscape) {
   .rotate-screen {
     display: flex;
   }
+  .page-container {
+    display: none;
+  }
 }
-
 body:after {
   display: none;
   content: url("../assets/img/video1.jpg") url("../assets/img/video2.jpg")
