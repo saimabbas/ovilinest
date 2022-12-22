@@ -46,6 +46,55 @@ const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   CSSPlugin.defaultForce3D = false;
   useEffect(() => {
+    function myFunction(x) {
+      if (x.matches) {
+        // If media query matches
+        gsap.fromTo(
+          ".v",
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "300%",
+            rotationZ: 0.01,
+          },
+          {
+            backgroundPosition: "35% 100%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 15,
+            rotationZ: 0.01,
+            force3D: true,
+          }
+        );
+      } else {
+        gsap.fromTo(
+          ".v",
+          {
+            backgroundPosition: "50% 50%",
+            backgroundSize: "300%",
+            rotationZ: 0.01,
+          },
+          {
+            backgroundPosition: "0% 0%",
+            backgroundSize: "400%",
+            ease: Linear.easeNone,
+            autoRound: false,
+            repeat: -1,
+            yoyo: true,
+            duration: 15,
+            rotationZ: 0.01,
+            force3D: true,
+          }
+        );
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+
     // FOR DESKTOPS
     gsap.fromTo(
       ".o",
@@ -66,25 +115,7 @@ const Home = () => {
         force3D: true,
       }
     );
-    gsap.fromTo(
-      ".v",
-      {
-        backgroundPosition: "50% 50%",
-        backgroundSize: "300%",
-        rotationZ: 0.01,
-      },
-      {
-        backgroundPosition: "0% 0%",
-        backgroundSize: "400%",
-        ease: Linear.easeNone,
-        autoRound: false,
-        repeat: -1,
-        yoyo: true,
-        duration: 15,
-        rotationZ: 0.01,
-        force3D: true,
-      }
-    );
+
     gsap.fromTo(
       ".i1",
       {
