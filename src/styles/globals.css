@@ -184,10 +184,10 @@ header {
   font-weight: 500;
   text-transform: uppercase;
 }
-.header-left a span {
+.header-left a span.active-class {
   color: #bcfb69;
 }
-.hmb-content a span {
+.hmb-content a span.active-class {
   color: #bcfb69;
 }
 .header-left a:hover {

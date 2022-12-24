@@ -42,6 +42,8 @@ import {
 } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { CSSPlugin } from "gsap/CSSPlugin";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const Home = () => {
   const [isMobHeaderShowing, setIsMobHeaderShowing] = useState(false);
   CSSPlugin.defaultForce3D = false;
@@ -550,7 +552,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <header>
+        {/* <header>
           {isMobHeaderShowing ? (
             <div className="header-mob-box">
               <div
@@ -654,7 +656,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
+        <Header />
         <section className="hero-section">
           <div className="hero-section-bg"></div>
           <div className="home-box">
@@ -696,22 +699,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <footer>
-          <div className="home-box">
-            <div className="footer-content">
-              <div className="footer-top">
-                <span> 용평리조트 대표이사 : 신달순, 임학운</span>
-                <div></div>
-                <span>
-                  주소 : 강원도 평창군 대관령면 올림픽로 715(구 용산리 130)
-                </span>
-                <div></div>
-                <span>제휴문의 ovilinest@yongpyong.co.kr</span>
-              </div>
-              <p>Copyright 2022 YONGPYONG RESORT All right reserved.</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );

@@ -39,6 +39,8 @@ import {
   MdOutlineRotate90DegreesCcw,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Nest = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -148,7 +150,7 @@ const Nest = () => {
         <img src={RotationImg} alt="RotationImg" />
       </div>
       <main className="world-page">
-        <header>
+        {/* <header>
           {isMobHeaderShowing ? (
             <div className="header-mob-box">
               <div
@@ -256,7 +258,8 @@ const Nest = () => {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
+        <Header isWorldActive={true} />
         <section className="world-section wc-1">
           <img src={WCImg1} alt="world" />
           <div className="home-box">
@@ -392,22 +395,7 @@ const Nest = () => {
             </div>
           </div>
         </section>
-        <footer>
-          <div className="home-box">
-            <div className="footer-content">
-              <div className="footer-top">
-                <span> 용평리조트 대표이사 : 신달순, 임학운</span>
-                <div></div>
-                <span>
-                  주소 : 강원도 평창군 대관령면 올림픽로 715(구 용산리 130)
-                </span>
-                <div></div>
-                <span>제휴문의 ovilinest@yongpyong.co.kr</span>
-              </div>
-              <p>Copyright 2022 YONGPYONG RESORT All right reserved.</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   );
