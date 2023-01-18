@@ -590,3 +590,85 @@
   width: 8.5rem;
   object-fit: contain;
 }
+.mynft-search-box.mynft-filter-mob-box {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .mynft-copy-box p {
+    font-size: 1.2rem;
+  }
+  .mynft-copy-box img {
+    display: none;
+  }
+  .mynft-copy-box {
+    padding: 0.75rem 0.5rem;
+  }
+  .mynft-mg-left {
+    display: none;
+  }
+  .mynft-head h6 {
+    display: none;
+  }
+  .mynft-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mnft-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .mynft-search-box.mynft-filter-mob-box {
+    display: block;
+    padding: 0.5rem;
+    width: 15% !important;
+    text-align: center;
+  }
+  .mynft-search-box.mynft-filter-mob-box svg {
+    margin: 0;
+  }
+  .mynft-head div select {
+    font-size: 1.3rem;
+    margin: 0;
+    width: 40%;
+  }
+  .mynft-search-box {
+    width: 40% !important;
+  }
+  .mynft-search-box input {
+    width: 80%;
+  }
+  .mynft-head div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nftm-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+  }
+  .nftm-grid-left {
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .nftm-grid-left > img {
+    display: none;
+  }
+  .nftm-grid-right > h4 {
+    text-align: center;
+  }
+  .nftm-tags {
+    padding: 0.65rem 2rem 0.65rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .nftm-tags h6 {
+    font-size: 1.65rem;
+  }
+  .nftm-content-box {
+    margin: 3rem 0 0 0;
+  }
+  .nftm4-grid {
+    grid-template-columns: 1fr;
+    margin: 3rem 0 0 0;
+  }
+}

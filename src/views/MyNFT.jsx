@@ -45,6 +45,7 @@ import {
   MdSearch,
   MdOutlineChevronRight,
   MdReplay,
+  MdFilterList,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
@@ -219,6 +220,9 @@ const MyNFT = () => {
                       <div className="mynft-search-box">
                         <input type="text" placeholder="Search" />
                         <MdSearch />
+                      </div>
+                      <div className="mynft-search-box mynft-filter-mob-box">
+                        <MdFilterList />
                       </div>
                     </div>
                   </div>
