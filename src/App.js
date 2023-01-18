@@ -5,6 +5,7 @@ import JourneyMap from "./views/JourneyMap";
 import Nest from "./views/Nest";
 import World from "./views/World";
 import Guide from "./views/Guide";
+import MyNFT from "./views/MyNFT";
 
 import {
   BrowserRouter as Switch,
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/nest" element={<Nest />} />
           <Route exact path="/world" element={<World />} />
           <Route exact path="/guide" element={<Guide />} />
+          <Route exact path="/mynft" element={<MyNFT />} />
         </Routes>
       </Switch>
     </>
