@@ -226,7 +226,7 @@ const MyNFT = () => {
                         <option value="번호역순">번호역순</option>
                       </select>
                       <div className="mynft-search-box">
-                        <input type="text" placeholder="Search" />
+                        <input type="text" placeholder="Number" />
                         <MdSearch />
                       </div>
                       <div className="mynft-search-box mynft-filter-mob-box">
@@ -445,7 +445,7 @@ const MyNFT = () => {
                           setModalScreen3(true);
                         }}
                       >
-                        휴대폰번호 등록하러 가기 <MdOutlineChevronRight />
+                        휴대폰 번호 등록하러 가기 <MdOutlineChevronRight />
                       </h6>
                     </div>
                     <div className="nftm-content-box-body">
