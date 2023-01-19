@@ -434,6 +434,7 @@
   border: 0;
   padding: 0.25rem 0.5rem;
   min-width: 5rem;
+  color: #000;
   text-align: center;
   text-decoration: none;
   background: linear-gradient(to right, #bcfb69, #26bbac);
@@ -504,6 +505,7 @@
   padding: 0.5rem 1.25rem;
   border-radius: 0.25rem;
   font-weight: 700;
+  color: #000;
   outline: 0;
   border: 0;
 }
@@ -569,12 +571,14 @@
   font-weight: 700;
   outline: 0;
   border: 0;
+  color: #000;
   min-width: 8rem;
 }
 .nftm4-grid-right > button {
   width: 75%;
   font-size: 1.25rem;
   font-weight: 700;
+  color: #000;
   background-color: #bcfb69;
   padding: 0.25rem 1.25rem;
   border-radius: 0.25rem;
