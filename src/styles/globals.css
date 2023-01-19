@@ -287,7 +287,7 @@ footer {
   background-color: #0b0b0b;
   padding: 2.5rem 0;
   position: relative;
-  z-index: 1000;
+  z-index: 500;
 }
 .footer-content {
   width: 100%;

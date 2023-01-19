@@ -60,6 +60,7 @@ const MyNFT = () => {
   const [modalScreen3, setModalScreen3] = useState(false);
   const [modalScreen4, setModalScreen4] = useState(false);
   const [modalScreen5, setModalScreen5] = useState(false);
+  const [isFilerMobOpen, setIsFilerMobOpen] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -115,6 +116,178 @@ const MyNFT = () => {
                   <MdContentCopy />
                 </span>
               </div>
+              {isFilerMobOpen ? (
+                <div className="filter-mob">
+                  <div className="filter-mob-content">
+                    <Tab.Container
+                      id="left-tabs-example"
+                      defaultActiveKey="Rarity"
+                    >
+                      <div className="fmc-head">
+                        <div className="fmc-head-left">
+                          <Nav variant="pills">
+                            <Nav.Item>
+                              <Nav.Link eventKey="Rarity">Rarity</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                              <Nav.Link eventKey="Fam">Fam</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                              <Nav.Link eventKey="Utility">Utility</Nav.Link>
+                            </Nav.Item>
+                          </Nav>
+                        </div>
+                        <div className="fmc-head-right">
+                          초기화 <MdReplay />
+                        </div>
+                      </div>
+                      <div className="fmc-body">
+                        <Tab.Content>
+                          <Tab.Pane eventKey="Rarity">
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="o1" id="o1" />
+                              <label htmlFor="o1">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>Royal Suite</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="o1" id="o2" />
+                              <label htmlFor="o2">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>Presidential Suite</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="o1" id="o3" />
+                              <label htmlFor="o3">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>Exeutive</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="o1" id="o4" />
+                              <label htmlFor="o4">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>Deluxe</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="o1" id="o5" />
+                              <label htmlFor="o5">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>Superior</p>
+                                </div>
+                              </label>
+                            </div>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="Fam">
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="p1" id="p1" />
+                              <label htmlFor="p1">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>N Fam</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="p1" id="p2" />
+                              <label htmlFor="p2">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>O Fam</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="p1" id="p3" />
+                              <label htmlFor="p3">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>B Fam</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="p1" id="p4" />
+                              <label htmlFor="p4">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>L Fam</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="p1" id="p5" />
+                              <label htmlFor="p5">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>E Fam</p>
+                                </div>
+                              </label>
+                            </div>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="Utility">
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="h1" id="h1" />
+                              <label htmlFor="h1">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>당월 Claim 가능</p>
+                                </div>
+                              </label>
+                            </div>
+                            <div className="o-checkbox">
+                              <input type="checkbox" name="h1" id="h2" />
+                              <label htmlFor="h2">
+                                <div className="o-checkbox-box">
+                                  <div className="ocb-box">
+                                    <MdOutlineCheck />
+                                  </div>
+                                  <p>당월 Claim 가능</p>
+                                </div>
+                              </label>
+                            </div>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </div>
+                    </Tab.Container>
+                    <button>DONE</button>
+                  </div>
+                </div>
+              ) : null}
               <div className="mnft-main-grid">
                 <div className="mynft-mg-left">
                   <div className="mn-filters-head">
@@ -229,9 +402,25 @@ const MyNFT = () => {
                         <input type="text" placeholder="Number" />
                         <MdSearch />
                       </div>
-                      <div className="mynft-search-box mynft-filter-mob-box">
-                        <MdFilterList />
-                      </div>
+                      {isFilerMobOpen ? (
+                        <div
+                          className="mynft-search-box mynft-filter-mob-box mynft-filter-mob-box-active"
+                          onClick={() => {
+                            setIsFilerMobOpen(false);
+                          }}
+                        >
+                          <MdFilterList />
+                        </div>
+                      ) : (
+                        <div
+                          className="mynft-search-box mynft-filter-mob-box"
+                          onClick={() => {
+                            setIsFilerMobOpen(true);
+                          }}
+                        >
+                          <MdFilterList />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="mynft-grid">
