@@ -20,6 +20,7 @@
 .mynft-copy-box svg {
   font-size: 2rem;
   color: #fff;
+  cursor: pointer;
 }
 .mnft-main-grid {
   width: 100%;
@@ -245,6 +246,9 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 1.5rem 0;
+}
+.nftm-cross span {
+  cursor: pointer;
 }
 .nftm-cross svg {
   color: #fff;

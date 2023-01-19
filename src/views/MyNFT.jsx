@@ -105,7 +105,15 @@ const MyNFT = () => {
               <div className="mynft-copy-box">
                 <img src={SmallImgIcon} alt="SmallImgIcon" />
                 <p>0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB025746</p>
-                <MdContentCopy />
+                <span
+                  onClick={() => {
+                    navigator.clipboard.writeText(
+                      "0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB025746"
+                    );
+                  }}
+                >
+                  <MdContentCopy />
+                </span>
               </div>
               <div className="mnft-main-grid">
                 <div className="mynft-mg-left">
@@ -265,7 +273,7 @@ const MyNFT = () => {
             <div className="nftm-content">
               <div className="nftm-cross">
                 <span></span>
-                <span>
+                <span onClick={handleClose}>
                   {" "}
                   <MdClose />
                 </span>
@@ -399,10 +407,15 @@ const MyNFT = () => {
           {modalScreen2 ? (
             <div className="nftm-content">
               <div className="nftm-cross">
-                <span>
+                <span
+                  onClick={() => {
+                    setModalScreen1(true);
+                    setModalScreen2(false);
+                  }}
+                >
                   <MdOutlineChevronLeft />
                 </span>
-                <span>
+                <span onClick={handleClose}>
                   <MdClose />
                 </span>
               </div>
@@ -428,8 +441,8 @@ const MyNFT = () => {
                       </div>
                       <h6
                         onClick={() => {
-                          setModalScreen1(false);
-                          setModalScreen2(true);
+                          setModalScreen2(false);
+                          setModalScreen3(true);
                         }}
                       >
                         휴대폰번호 등록하러 가기 <MdOutlineChevronRight />
@@ -553,7 +566,7 @@ const MyNFT = () => {
                 <span>
                   <MdOutlineChevronLeft />
                 </span>
-                <span>
+                <span onClick={handleClose}>
                   <MdClose />
                 </span>
               </div>
@@ -594,7 +607,7 @@ const MyNFT = () => {
                 <span>
                   <MdOutlineChevronLeft />
                 </span>
-                <span>
+                <span onClick={handleClose}>
                   <MdClose />
                 </span>
               </div>
@@ -642,7 +655,7 @@ const MyNFT = () => {
                 <span>
                   <MdOutlineChevronLeft />
                 </span>
-                <span>
+                <span onClick={handleClose}>
                   <MdClose />
                 </span>
               </div>
