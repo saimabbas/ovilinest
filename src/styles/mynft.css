@@ -671,4 +671,9 @@
     grid-template-columns: 1fr;
     margin: 3rem 0 0 0;
   }
+  .modal-dialog,
+  .modal-content {
+    margin: 0;
+    height: 100vh;
+  }
 }
