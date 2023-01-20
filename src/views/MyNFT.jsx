@@ -80,6 +80,41 @@ const MyNFT = () => {
       );
     });
   }, []);
+  const showCopiedfun = () => {
+    gsap.fromTo(
+      ".copied",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 0.15,
+      }
+    );
+    setTimeout(() => {
+      gsap.fromTo(
+        ".copied",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+          duration: 0.15,
+        }
+      );
+    }, 2000);
+  };
+  $(function () {
+    var w = Math.max(
+      document.documentElement.clientWidth,
+      window.innerWidth || 0
+    );
+    var h = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+    $("html, body").css({ width: w, height: h });
+  });
 
   return (
     <div className="app">
@@ -104,6 +139,7 @@ const MyNFT = () => {
                 <p>나의 Ovili Collection을 확인해 보세요~!</p>
               </div>
               <div className="mynft-copy-box">
+                <div className="copied">Copied!</div>
                 <img src={SmallImgIcon} alt="SmallImgIcon" />
                 <p>0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB02574</p>
                 <span
@@ -111,6 +147,7 @@ const MyNFT = () => {
                     navigator.clipboard.writeText(
                       "0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB02574"
                     );
+                    showCopiedfun();
                   }}
                 >
                   <MdContentCopy />
