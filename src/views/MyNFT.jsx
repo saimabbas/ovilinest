@@ -105,11 +105,11 @@ const MyNFT = () => {
               </div>
               <div className="mynft-copy-box">
                 <img src={SmallImgIcon} alt="SmallImgIcon" />
-                <p>0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB025746</p>
+                <p>0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB02574</p>
                 <span
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      "0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB025746"
+                      "0xfDaa4A9F09fd580fv1v15af6E2fb3c859eB02574"
                     );
                   }}
                 >
@@ -307,7 +307,7 @@ const MyNFT = () => {
                               <div className="ocb-box">
                                 <MdOutlineCheck />
                               </div>
-                              <p>당월 Claim 가능</p>
+                              <p>Royal Suite</p>
                             </div>
                           </label>
                         </div>
@@ -318,7 +318,40 @@ const MyNFT = () => {
                               <div className="ocb-box">
                                 <MdOutlineCheck />
                               </div>
-                              <p>당월 Claim 가능</p>
+                              <p>Presidential Suite</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="o1" id="o3" />
+                          <label htmlFor="o3">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>Exeutive</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="o1" id="o4" />
+                          <label htmlFor="o4">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>Deluxe</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="o1" id="o5" />
+                          <label htmlFor="o5">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>Superior</p>
                             </div>
                           </label>
                         </div>
@@ -338,7 +371,7 @@ const MyNFT = () => {
                               <div className="ocb-box">
                                 <MdOutlineCheck />
                               </div>
-                              <p>당월 Claim 가능</p>
+                              <p>N Fam</p>
                             </div>
                           </label>
                         </div>
@@ -349,7 +382,40 @@ const MyNFT = () => {
                               <div className="ocb-box">
                                 <MdOutlineCheck />
                               </div>
-                              <p>당월 Claim 가능</p>
+                              <p>O Fam</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="p1" id="p3" />
+                          <label htmlFor="p3">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>B Fam</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="p1" id="p4" />
+                          <label htmlFor="p4">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>L Fam</p>
+                            </div>
+                          </label>
+                        </div>
+                        <div className="o-checkbox">
+                          <input type="checkbox" name="p1" id="p5" />
+                          <label htmlFor="p5">
+                            <div className="o-checkbox-box">
+                              <div className="ocb-box">
+                                <MdOutlineCheck />
+                              </div>
+                              <p>E Fam</p>
                             </div>
                           </label>
                         </div>
