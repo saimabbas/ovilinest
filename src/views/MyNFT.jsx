@@ -103,6 +103,16 @@ const MyNFT = () => {
         }
       );
     }, 2000);
+
+    if (
+      navigator.userAgent.match(
+        /SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i
+      )
+    ) {
+      $(".rotate-screen").css({
+        display: "none",
+      });
+    }
   };
 
   return (
