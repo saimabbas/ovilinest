@@ -103,21 +103,21 @@ const MyNFT = () => {
         }
       );
     }, 2000);
-
-    if (
-      navigator.userAgent.match(
-        /SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i
-      )
-    ) {
-      $(".rotate-screen").css({
-        display: "none !important",
-      });
-    }
   };
+
+  if (
+    navigator.userAgent.match(
+      /SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i
+    )
+  ) {
+    $(".rotate-screen.rotate-screen-samsung").css({
+      display: "none",
+    });
+  }
 
   return (
     <div className="app">
-      <div className="rotate-screen">
+      <div className="rotate-screen rotate-screen-samsung">
         <img src={RotationImgBG} alt="" />
         <p>화면을 돌려주세요.</p>
         <img src={RotationImg} alt="RotationImg" />
