@@ -110,7 +110,7 @@ const MyNFT = () => {
       )
     ) {
       $(".rotate-screen").css({
-        display: "none",
+        display: "none !important",
       });
     }
   };
